@@ -1,26 +1,503 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-sans), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  --font-script: var(--font-script), "Caveat", cursive;
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-serif);
+  --color-brand-cream: #FAF8F5;
+  --color-brand-surface: #F4EFE6;
+  --color-brand-surface-alt: #EFECE4;
+  --color-brand-gold: #D49B44;
+  --color-brand-gold-hover: #BE8532;
+  --color-brand-gold-light: #F3E5D0;
+  --color-brand-charcoal: #1A1A18;
+  --color-brand-body: #42403B;
+  --color-brand-muted: #76736A;
+  --color-brand-border: #E5DFD5;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.25, 1, 0.5, 1);
+  --duration-micro: 250ms;
+  --duration-hover: 350ms;
+  --duration-reveal: 850ms;
+  --duration-image: 1200ms;
+  --duration-hero: 1600ms;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.148 0.004 228.8);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.148 0.004 228.8);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.148 0.004 228.8);
+  --primary: oklch(0.218 0.008 223.9);
+  --primary-foreground: oklch(0.987 0.002 197.1);
+  --secondary: oklch(0.963 0.002 197.1);
+  --secondary-foreground: oklch(0.218 0.008 223.9);
+  --muted: oklch(0.963 0.002 197.1);
+  --muted-foreground: oklch(0.56 0.021 213.5);
+  --accent: oklch(0.963 0.002 197.1);
+  --accent-foreground: oklch(0.218 0.008 223.9);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.925 0.005 214.3);
+  --input: oklch(0.925 0.005 214.3);
+  --ring: oklch(0.723 0.014 214.4);
+  --chart-1: oklch(0.845 0.143 164.978);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.596 0.145 163.225);
+  --chart-4: oklch(0.508 0.118 165.612);
+  --chart-5: oklch(0.432 0.095 166.913);
+  --radius: 0.45rem;
+  --sidebar: oklch(0.987 0.002 197.1);
+  --sidebar-foreground: oklch(0.148 0.004 228.8);
+  --sidebar-primary: oklch(0.218 0.008 223.9);
+  --sidebar-primary-foreground: oklch(0.987 0.002 197.1);
+  --sidebar-accent: oklch(0.963 0.002 197.1);
+  --sidebar-accent-foreground: oklch(0.218 0.008 223.9);
+  --sidebar-border: oklch(0.925 0.005 214.3);
+  --sidebar-ring: oklch(0.723 0.014 214.4);
+}
+
+.dark {
+  --background: oklch(0.148 0.004 228.8);
+  --foreground: oklch(0.987 0.002 197.1);
+  --card: oklch(0.218 0.008 223.9);
+  --card-foreground: oklch(0.987 0.002 197.1);
+  --popover: oklch(0.218 0.008 223.9);
+  --popover-foreground: oklch(0.987 0.002 197.1);
+  --primary: oklch(0.925 0.005 214.3);
+  --primary-foreground: oklch(0.218 0.008 223.9);
+  --secondary: oklch(0.275 0.011 216.9);
+  --secondary-foreground: oklch(0.987 0.002 197.1);
+  --muted: oklch(0.275 0.011 216.9);
+  --muted-foreground: oklch(0.723 0.014 214.4);
+  --accent: oklch(0.275 0.011 216.9);
+  --accent-foreground: oklch(0.987 0.002 197.1);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.56 0.021 213.5);
+  --chart-1: oklch(0.845 0.143 164.978);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.596 0.145 163.225);
+  --chart-4: oklch(0.508 0.118 165.612);
+  --chart-5: oklch(0.432 0.095 166.913);
+  --sidebar: oklch(0.218 0.008 223.9);
+  --sidebar-foreground: oklch(0.987 0.002 197.1);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.987 0.002 197.1);
+  --sidebar-accent: oklch(0.275 0.011 216.9);
+  --sidebar-accent-foreground: oklch(0.987 0.002 197.1);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.56 0.021 213.5);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    background-color: #FAF8F5;
+    color: #1A1A18;
+    font-family: var(--font-sans), sans-serif;
+  }
+  h1, h2, h3, h4, .font-serif, .font-editorial {
+    font-family: var(--font-serif), Georgia, serif;
+  }
+  .font-script, .font-handwriting {
+    font-family: var(--font-script), cursive;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.glass-pill {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #EFECE4;
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #D49B44;
+  border-radius: 9999px;
+}
+
+/* ==========================================================================
+   EDITORIAL ANIMATION SYSTEM (PURE CSS & SCROLL-DRIVEN ENHANCEMENT)
+   ========================================================================== */
+
+/* --- 1. Keyframe Definitions --- */
+
+@keyframes heroFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroImageCinematic {
+  0% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes headerSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Directional Card & Section Entrance Animations */
+@keyframes cardEnterLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-48px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardEnterRight {
+  0% {
+    opacity: 0;
+    transform: translateX(48px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cardEnterUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardEnterZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes portholeSheen {
+  0%, 100% {
+    opacity: 0.15;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 0.35;
+    transform: rotate(6deg);
+  }
+}
+
+/* --- 2. Navigation Micro-Interactions --- */
+
+header.header-animated {
+  animation: headerSlideDown 0.7s var(--ease-editorial) 0.05s both;
+}
+
+.nav-link-editorial {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: color var(--duration-hover) var(--ease-editorial);
+}
+
+.nav-link-editorial::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D49B44;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 320ms var(--ease-editorial);
+}
+
+.nav-link-editorial:hover::after,
+.nav-link-editorial:focus-visible::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-dropdown-item {
+  transition: background-color 220ms var(--ease-editorial), padding-left 240ms var(--ease-editorial);
+}
+
+.nav-dropdown-item:hover {
+  padding-left: 1.25rem;
+}
+
+/* --- 3. Hero Section Page-Load Entrance --- */
+
+.hero-enter-kicker {
+  animation: heroFadeUp 0.8s var(--ease-editorial) 0.1s both;
+}
+
+.hero-enter-title {
+  animation: heroFadeUp 1.0s var(--ease-editorial) 0.22s both;
+}
+
+.hero-enter-desc {
+  animation: heroFadeUp 1.0s var(--ease-editorial) 0.42s both;
+}
+
+.hero-enter-cta {
+  animation: heroFadeUp 1.0s var(--ease-editorial) 0.6s both;
+}
+
+.hero-enter-strip {
+  animation: heroFadeUp 1.0s var(--ease-editorial) 0.8s both;
+}
+
+.hero-image-cinematic {
+  animation: heroImageCinematic 1.6s var(--ease-editorial) 0.15s both;
+  will-change: transform, opacity;
+}
+
+/* --- 4. Directional Entrance Classes (Triggered On Viewport Scroll) --- */
+
+.anim-enter-left {
+  opacity: 0;
+  transform: translateX(-48px);
+  will-change: transform, opacity;
+}
+
+.anim-enter-left.is-revealed {
+  animation: cardEnterLeft 0.85s var(--ease-editorial) both;
+}
+
+.anim-enter-right {
+  opacity: 0;
+  transform: translateX(48px);
+  will-change: transform, opacity;
+}
+
+.anim-enter-right.is-revealed {
+  animation: cardEnterRight 0.85s var(--ease-editorial) both;
+}
+
+.anim-enter-up {
+  opacity: 0;
+  transform: translateY(40px);
+  will-change: transform, opacity;
+}
+
+.anim-enter-up.is-revealed {
+  animation: cardEnterUp 0.85s var(--ease-editorial) both;
+}
+
+.anim-enter-zoom {
+  opacity: 0;
+  transform: scale(0.9) translateY(24px);
+  will-change: transform, opacity;
+}
+
+.anim-enter-zoom.is-revealed {
+  animation: cardEnterZoom 0.9s var(--ease-editorial) both;
+}
+
+/* Staggered Delay Utilities */
+.anim-delay-1 { animation-delay: 120ms !important; }
+.anim-delay-2 { animation-delay: 240ms !important; }
+.anim-delay-3 { animation-delay: 360ms !important; }
+.anim-delay-4 { animation-delay: 480ms !important; }
+.anim-delay-5 { animation-delay: 600ms !important; }
+
+/* Legacy Support & Generic Reveals */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal.is-revealed {
+  animation: cardEnterUp 0.85s var(--ease-editorial) both;
+}
+
+.scroll-reveal-image {
+  opacity: 0;
+  transform: scale(0.92) translateY(20px);
+  will-change: transform, opacity;
+}
+
+.scroll-reveal-image.is-revealed {
+  animation: cardEnterZoom 0.9s var(--ease-editorial) both;
+}
+
+/* --- 5. Universal Card Hover Micro-Interactions --- */
+
+.editorial-card {
+  transition: transform 380ms var(--ease-editorial),
+              box-shadow 380ms var(--ease-editorial),
+              border-color 380ms var(--ease-editorial) !important;
+  will-change: transform, box-shadow;
+  cursor: pointer;
+}
+
+.editorial-card:hover {
+  transform: translateY(-8px) !important;
+  border-color: #D49B44 !important;
+  box-shadow: 0 22px 40px -12px rgba(212, 155, 68, 0.28), 0 8px 18px -4px rgba(26, 26, 24, 0.08) !important;
+}
+
+.editorial-card img,
+.editorial-card .editorial-card-img {
+  transition: transform 550ms var(--ease-editorial) !important;
+  will-change: transform;
+}
+
+.editorial-card:hover img,
+.editorial-card:hover .editorial-card-img {
+  transform: scale(1.065) !important;
+}
+
+.editorial-arrow {
+  transition: transform 250ms var(--ease-editorial) !important;
+  display: inline-block;
+}
+
+.editorial-card:hover .editorial-arrow {
+  transform: translateX(8px) !important;
+}
+
+/* --- 6. Timeline / Journey Connecting Line --- */
+
+.journey-connector {
+  position: relative;
+}
+
+.journey-connector::before {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 20%;
+  right: -20%;
+  height: 1px;
+  background: linear-gradient(90deg, #D49B44 0%, rgba(212, 155, 68, 0.2) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .journey-connector::before {
+    display: none;
+  }
+}
+
+/* --- 7. Porthole Ambient Sheen --- */
+
+.porthole-sheen {
+  animation: portholeSheen 8s ease-in-out infinite;
+}
+
+/* --- 8. Accessibility: Reduced Motion Support --- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .anim-enter-left,
+  .anim-enter-right,
+  .anim-enter-up,
+  .anim-enter-zoom,
+  .scroll-reveal,
+  .scroll-reveal-image,
+  .editorial-card,
+  .hero-enter-kicker,
+  .hero-enter-title,
+  .hero-enter-desc,
+  .hero-enter-cta,
+  .hero-enter-strip,
+  .hero-image-cinematic,
+  header.header-animated {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }
