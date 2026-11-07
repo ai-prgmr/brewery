@@ -37,7 +37,7 @@ export const articles: Article[] = [
     readTime: "7 min read",
     publishedDate: "October 2024",
     featured: true,
-    image: "/images/process/process-03-build.jpg",
+    image: "/brewery/images/process/process-03-build.jpg",
     keyTakeaways: [
       "Traditional wort boiling requires 8–10% evaporation per hour, consuming massive steam boiler loads.",
       "Vapor recompression recycles kettle steam through a high-efficiency plate heat exchanger.",
@@ -89,7 +89,7 @@ export const articles: Article[] = [
     authorCountry: "🇮🇳 India",
     readTime: "9 min read",
     publishedDate: "October 2024",
-    image: "/images/process/process-01-talk.jpg",
+    image: "/brewery/images/process/process-01-talk.jpg",
     keyTakeaways: [
       "Fermenters filled with beer require 1,200 to 2,000 kg/m² structural floor load capacity.",
       "Trench drains must be food-grade SS304 with removable sediment baskets and minimum 1:50 fall slope.",
@@ -140,7 +140,7 @@ export const articles: Article[] = [
     authorCountry: "🇩🇪 Germany",
     readTime: "6 min read",
     publishedDate: "September 2024",
-    image: "/images/process/process-03-build.jpg",
+    image: "/brewery/images/process/process-03-build.jpg",
     keyTakeaways: [
       "SS 1.4301 (AISI 304) is the benchmark standard for hot-side brewhouses and standard fermentation vessels.",
       "SS 1.4404 (AISI 316L) contains 2% molybdenum for superior resistance against pitting and sour-beer acids.",
@@ -184,7 +184,7 @@ export const articles: Article[] = [
     authorCountry: "🇩🇪 Germany",
     readTime: "8 min read",
     publishedDate: "September 2024",
-    image: "/images/beer-lagers.jpg",
+    image: "/brewery/images/beer-lagers.jpg",
     keyTakeaways: [
       "Lager yeasts (Saccharomyces pastorianus) require double the pitching rate of ale yeasts (1.5–2.0M cells/mL/°P).",
       "Precision multi-rest step mashing is essential for head retention, clarity, and malt sweetness balance.",
@@ -228,7 +228,7 @@ export const articles: Article[] = [
     authorCountry: "🇩🇪 Germany",
     readTime: "8 min read",
     publishedDate: "August 2024",
-    image: "/images/bev-kombucha.jpg",
+    image: "/brewery/images/bev-kombucha.jpg",
     keyTakeaways: [
       "Kombucha introduces Acetobacter and wild yeasts which are catastrophic contaminants in beer unitanks.",
       "Dedicated hoses, gaskets, and separate fermentation tanks are mandatory for non-beer fermentations.",
@@ -272,7 +272,7 @@ export const articles: Article[] = [
     authorCountry: "🇩🇪 🇮🇳",
     readTime: "5 min read",
     publishedDate: "August 2024",
-    image: "/images/tech-sight-glass.jpg",
+    image: "/brewery/images/tech-sight-glass.jpg",
     keyTakeaways: [
       "Standard punched sheet metal has only 12–15% open area and frequently blinds with fine grist.",
       "Continuous 0.7mm wedge-wire profile increases open area to over 22% with self-clearing flow.",

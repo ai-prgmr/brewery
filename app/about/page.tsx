@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/story-founders.jpg",
+        url: "/brewery/images/story-founders.jpg",
         width: 1200,
         height: 630,
         alt: "Brau Mitraa Founders & Engineers Collaborating on Brewery Blueprints",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "About Us & Founders | Brau Mitraa",
     description:
       "Three founders, two countries, one standard: build breweries in India the way they are built in Germany.",
-    images: ["/images/story-founders.jpg"],
+    images: ["/brewery/images/story-founders.jpg"],
   },
 };
 
@@ -67,7 +67,7 @@ const founders: Founder[] = [
     location: "Germany",
     country: "Germany",
     flag: "🇩🇪",
-    image: "/images/founders/rainer-kruppa.jpg",
+    image: "/brewery/images/founders/rainer-kruppa.jpg",
     imageAlt:
       "Rainer Kruppa pouring a freshly brewed beer from a stainless brewery tank",
     objectPosition: "50% 20%",
@@ -92,7 +92,7 @@ const founders: Founder[] = [
     location: "Indore, India",
     country: "India",
     flag: "🇮🇳",
-    image: "/images/founders/abhay-jhaveri.jpg",
+    image: "/brewery/images/founders/abhay-jhaveri.jpg",
     imageAlt:
       "Abhay Jhaveri holding a beer in a brewpub with copper kettles behind him",
     objectPosition: "50% 15%",
@@ -117,7 +117,7 @@ const founders: Founder[] = [
     location: "Germany",
     country: "Germany",
     flag: "🇩🇪",
-    image: "/images/founders/ruediger-stolle.jpg",
+    image: "/brewery/images/founders/ruediger-stolle.jpg",
     imageAlt: "Portrait of Rüdiger Stolle",
     objectPosition: "center",
     isRound: true,
@@ -194,7 +194,7 @@ export default function AboutPage() {
         "@id": "https://braumitraa.com/#organization",
         "name": "Brau Mitraa",
         "url": "https://braumitraa.com",
-        "logo": "https://braumitraa.com/images/hero-brewery.jpg",
+        "logo": "https://braumitraa.com/brewery/images/hero-brewery.jpg",
         "slogan": "Brewing Possibilities Together",
         "foundingLocation": [
           {
@@ -644,7 +644,7 @@ export default function AboutPage() {
             <div className="lg:col-span-7">
               <div className="rounded-3xl overflow-hidden shadow-xl border border-[#E5DFD5] relative h-[380px] sm:h-[460px]">
                 <Image
-                  src="/images/story-founders.jpg"
+                  src="/brewery/images/story-founders.jpg"
                   alt="Brau Mitraa brewing engineers reviewing layout blueprints"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"

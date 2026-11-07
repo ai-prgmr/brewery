@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/process/process-03-build.jpg",
+        url: "/brewery/images/process/process-03-build.jpg",
         width: 1200,
         height: 630,
         alt: "Brau Mitraa Knowledge Center — Brewery Engineering & Brewing Science",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Knowledge Center | Brau Mitraa",
     description:
       "Technical whitepapers and brewhouse planning guides from Brau Mitraa founders.",
-    images: ["/images/process/process-03-build.jpg"],
+    images: ["/brewery/images/process/process-03-build.jpg"],
   },
 };
 

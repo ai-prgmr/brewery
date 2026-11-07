@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/solution-brewery.jpg",
+        url: "/brewery/images/solution-brewery.jpg",
         width: 1200,
         height: 630,
         alt: "Brau Mitraa Braupagode Brewery Technology and Engineering",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "Brewery Technology & Engineering | Brau Mitraa",
     description:
       "Patented Braupagode™ vertical brewhouses, 75% energy savings via vapor recompression, and verified 200,000L brewery layouts.",
-    images: ["/images/solution-brewery.jpg"],
+    images: ["/brewery/images/solution-brewery.jpg"],
   },
 };
 
@@ -60,7 +60,7 @@ export default function TechnologyPage() {
         "@type": "Product",
         "@id": "https://braumitraa.com/technology#braupagode",
         "name": "Braupagode™ 1,000L Microbrewery System",
-        "image": "https://braumitraa.com/images/solution-brewery.jpg",
+        "image": "https://braumitraa.com/brewery/images/solution-brewery.jpg",
         "description":
           "Patented two-vessel vertical stacked brewhouse system designed for a 200 kg malt charge and 1,000L cast-out wort volume. Features thermal vapor recompression saving 75% boiling energy and enables 2 brews per 10-hour shift (up to 500,000L annually).",
         "brand": {

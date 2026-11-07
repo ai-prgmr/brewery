@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/solution-brewery.jpg",
+        url: "/brewery/images/solution-brewery.jpg",
         width: 1200,
         height: 630,
         alt: "Turnkey Microbrewery Setup by Brau Mitraa",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Start Your Brewery | Brau Mitraa Turnkey Solutions",
     description:
       "Space-saving 2-vessel Braupagode brewhouses, certified SS304/SS316 fabrication, and 130+ recipes ready on day one.",
-    images: ["/images/solution-brewery.jpg"],
+    images: ["/brewery/images/solution-brewery.jpg"],
   },
 };
 
@@ -246,7 +246,7 @@ export default function StartBreweryPage() {
             <div className="lg:col-span-5 anim-enter-right">
               <div className="relative rounded-3xl overflow-hidden shadow-xl border border-[#E5DFD5] aspect-[4/3] bg-[#EFECE4] group">
                 <Image
-                  src="/images/solution-brewery.jpg"
+                  src="/brewery/images/solution-brewery.jpg"
                   alt="Modern polished stainless turnkey microbrewery setup"
                   fill
                   priority

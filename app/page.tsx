@@ -41,7 +41,7 @@ export default function HomePage() {
     {
       title: "Start Your Brewery",
       desc: "Restaurants, brewpubs, new ventures. Turn your idea into a working brewery with tailored turnkey setups.",
-      image: "/images/solution-brewery.jpg",
+      image: "/brewery/images/solution-brewery.jpg",
       icon: IconBuildingStore,
       href: "/solutions/start-brewery",
       cta: "Explore Brewery Setups",
@@ -49,7 +49,7 @@ export default function HomePage() {
     {
       title: "Scale Your Operation",
       desc: "Larger systems, expansions and custom automation solutions engineered to increase capacity smoothly.",
-      image: "/images/solution-scale.jpg",
+      image: "/brewery/images/solution-scale.jpg",
       icon: IconPackages,
       href: "/solutions/scale-operation",
       cta: "View Brewing Systems",
@@ -57,7 +57,7 @@ export default function HomePage() {
     {
       title: "Upgrade or Replace",
       desc: "Individual tanks, CIP units, filtration, automated brewhouse upgrades and hands-on maintenance support.",
-      image: "/images/solution-upgrade.jpg",
+      image: "/brewery/images/solution-upgrade.jpg",
       icon: IconTools,
       href: "/solutions/upgrade-replace",
       cta: "Explore Equipment",
@@ -68,55 +68,55 @@ export default function HomePage() {
     {
       title: "Lagers & Pilsners",
       subtitle: "Crisp. Classic. Always a favourite.",
-      image: "/images/beer-lagers.jpg",
+      image: "/brewery/images/beer-lagers.jpg",
       href: "/beverages#lagers",
     },
     {
       title: "Ales & IPAs",
       subtitle: "Bold. Hoppy. Full of character.",
-      image: "/images/beer-ales.jpg",
+      image: "/brewery/images/beer-ales.jpg",
       href: "/beverages#ales",
     },
     {
       title: "Wheat Beers",
       subtitle: "Fruity. Refreshing. Distinctive.",
-      image: "/images/beer-wheat.jpg",
+      image: "/brewery/images/beer-wheat.jpg",
       href: "/beverages#wheat",
     },
     {
       title: "Stouts & Porters",
       subtitle: "Rich. Roasted. Complex.",
-      image: "/images/beer-stouts.jpg",
+      image: "/brewery/images/beer-stouts.jpg",
       href: "/beverages#stouts",
     },
     {
       title: "Sours & Fruit Beers",
       subtitle: "Tart. Creative. Unforgettable.",
-      image: "/images/beer-sours.jpg",
+      image: "/brewery/images/beer-sours.jpg",
       href: "/beverages#sours",
     },
     {
       title: "Mead & Braggot",
       subtitle: "Fermented honey. Ancient craft.",
-      image: "/images/beer-mead.jpg",
+      image: "/brewery/images/beer-mead.jpg",
       href: "/beverages#mead",
     },
     {
       title: "Kombucha & Teas",
       subtitle: "Live SCOBY. Sparkling botanicals.",
-      image: "/images/bev-kombucha.jpg",
+      image: "/brewery/images/bev-kombucha.jpg",
       href: "/beverages#kombucha",
     },
     {
       title: "Ciders & Perries",
       subtitle: "Fermented apple & pear must.",
-      image: "/images/bev-cider.jpg",
+      image: "/brewery/images/bev-cider.jpg",
       href: "/beverages#cider",
     },
     {
       title: "Flavoured Concepts",
       subtitle: "Creative. Local. Limitless.",
-      image: "/images/beer-flavoured.jpg",
+      image: "/brewery/images/beer-flavoured.jpg",
       href: "/beverages#experimental",
     },
   ];
@@ -212,7 +212,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-[16/11] lg:aspect-[16/12] bg-[#EFECE4] hero-image-cinematic">
                 <Image
-                  src="/images/hero-toast.jpg"
+                  src="/brewery/images/hero-toast.jpg"
                   alt="Friends toasting golden craft beer glasses in an ambient brewery"
                   fill
                   priority
@@ -544,7 +544,7 @@ export default function HomePage() {
               <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full p-3 bg-gradient-to-tr from-stone-400 via-stone-200 to-stone-500 shadow-2xl border-4 border-[#FAF8F5]">
                 <div className="w-full h-full rounded-full overflow-hidden relative shadow-inner">
                   <Image
-                    src="/images/tech-sight-glass.jpg"
+                    src="/brewery/images/tech-sight-glass.jpg"
                     alt="Craft beer sight glass fermentation bubbling"
                     fill
                     sizes="384px"
@@ -750,7 +750,7 @@ export default function HomePage() {
             <div className="lg:col-span-7 anim-enter-left">
               <div className="rounded-3xl overflow-hidden shadow-xl border border-[#E5DFD5] relative h-[420px] sm:h-[480px] group">
                 <Image
-                  src="/images/story-founders.jpg"
+                  src="/brewery/images/story-founders.jpg"
                   alt="Brewing experts and engineers collaborating over table blueprints"
                   fill
                   sizes="(max-width: 1024px) 100vw, 60vw"
@@ -803,7 +803,7 @@ export default function HomePage() {
         {/* Background Ambient Taproom/Brewery Image */}
         <div className="absolute inset-0 z-0 anim-enter-zoom">
           <Image
-            src="/images/cta-taproom.jpg"
+            src="/brewery/images/cta-taproom.jpg"
             alt="Warm illuminated brewery and restaurant ambient background"
             fill
             sizes="100vw"

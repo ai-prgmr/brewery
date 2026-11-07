@@ -24,7 +24,7 @@ const categories: Category[] = [
     id: "lagers",
     name: "Lagers and pilsners",
     subtitle: "Crisp. Clean. Cold-fermented precision.",
-    image: "/images/beer-lagers.jpg",
+    image: "/brewery/images/beer-lagers.jpg",
     styles: [
       "Munich Helles",
       "Czech Pilsner",
@@ -48,7 +48,7 @@ const categories: Category[] = [
     id: "ales",
     name: "Ales and IPAs",
     subtitle: "Hops, malt balance, and expressive top-fermenting yeast.",
-    image: "/images/beer-ales.jpg",
+    image: "/brewery/images/beer-ales.jpg",
     styles: [
       "Blonde Ale",
       "Golden Ale",
@@ -82,7 +82,7 @@ const categories: Category[] = [
     id: "wheat",
     name: "Wheat beers",
     subtitle: "Silky texture, clove & banana esters, and refreshing grain profile.",
-    image: "/images/beer-wheat.jpg",
+    image: "/brewery/images/beer-wheat.jpg",
     styles: [
       "Hefeweizen",
       "Kristallweizen",
@@ -100,7 +100,7 @@ const categories: Category[] = [
     id: "stouts",
     name: "Stouts and porters",
     subtitle: "Roasted barley, dark chocolate, coffee depth, and barrel complexity.",
-    image: "/images/beer-stouts.jpg",
+    image: "/brewery/images/beer-stouts.jpg",
     styles: [
       "Dry Irish Stout",
       "Sweet Stout",
@@ -124,7 +124,7 @@ const categories: Category[] = [
     id: "sours",
     name: "Sours and fruit beers",
     subtitle: "Acidic bite, wild fermentation, barrel aging, and fresh fruit integration.",
-    image: "/images/beer-sours.jpg",
+    image: "/brewery/images/beer-sours.jpg",
     styles: [
       "Gose",
       "Lambic",
@@ -144,7 +144,7 @@ const categories: Category[] = [
     name: "Kombucha and fermented botanicals",
     subtitle: "Live SCOBY culture, probiotic acids, and sparkling botanical infusions.",
     note: "Kombucha utilizes an aerobic primary fermentation followed by pressurized conditioning. Because of live acetic acid bacteria (Acetobacter), we engineer dedicated cellar piping and isolated vessels to prevent any cross-contact with clean malt fermentations.",
-    image: "/images/bev-kombucha.jpg",
+    image: "/brewery/images/bev-kombucha.jpg",
     styles: [
       "Classic Black Tea Kombucha",
       "Green Tea & Jasmine",
@@ -163,7 +163,7 @@ const categories: Category[] = [
     name: "Hard ciders and perries",
     subtitle: "Heritage apple & pear fermentation—naturally gluten-free craft excellence.",
     note: "Cider relies on 100% fruit must fermentation without boiling. It utilizes our temperature-controlled glycol jacketed tanks, carbonation stones, and sterile filtration to produce bone-dry traditional or fruit-forward dessert profiles.",
-    image: "/images/bev-cider.jpg",
+    image: "/brewery/images/bev-cider.jpg",
     styles: [
       "English Dry Cider",
       "French Cidre Bouché",
@@ -181,7 +181,7 @@ const categories: Category[] = [
     name: "Hard seltzers and hop waters",
     subtitle: "Pure effervescence, zero sugar options, and high-margin turnaround.",
     note: "Hard seltzers ferment a neutral dextrose wash polished through carbon blocks for clean clarity before natural fruit essence dosing (2.8–3.2 vols CO2). Hop waters provide zero-alcohol (0.0% ABV) aromatic draft pours straight from bright beer tanks.",
-    image: "/images/bev-seltzers.jpg",
+    image: "/brewery/images/bev-seltzers.jpg",
     styles: [
       "Meyer Lemon & Sea Salt Seltzer",
       "Wild Black Cherry Seltzer",
@@ -199,7 +199,7 @@ const categories: Category[] = [
     name: "Cold brew coffee and nitro tonics",
     subtitle: "Steeped craft botanicals and silky nitrogen-infused draught pours.",
     note: "Our bright beer tanks easily adapt for coarse-grind steeping and micro-filtration, dispensing velvety nitrogenated pours at the tap without requiring secondary dedicated brewhouses.",
-    image: "/images/bev-coldbrew.jpg",
+    image: "/brewery/images/bev-coldbrew.jpg",
     styles: [
       "Classic Nitro Cold Brew",
       "Single-Origin Ethiopian Cold Brew",
@@ -215,7 +215,7 @@ const categories: Category[] = [
     name: "Mead and braggot",
     subtitle: "Ancient honey fermentation meets modern brewing innovation.",
     note: "Mead is fermented honey, not beer. We keep it in its own family rather than quietly filing it with the lagers, because any brewer you hire will know the difference. A braggot is the genuine hybrid of the two.",
-    image: "/images/beer-mead.jpg",
+    image: "/brewery/images/beer-mead.jpg",
     styles: [
       "Traditional Mead",
       "Hydromel",
@@ -234,7 +234,7 @@ const categories: Category[] = [
     name: "Flavoured and experimental",
     subtitle: "Botanicals, local fruits, spices, and contemporary crowd-pleasers.",
     note: "These are flavour concepts rather than recognised styles, and we say so. They are also what sells on a Saturday.",
-    image: "/images/beer-flavoured.jpg",
+    image: "/brewery/images/beer-flavoured.jpg",
     styles: [
       "Cola Lager",
       "Mango Lager",

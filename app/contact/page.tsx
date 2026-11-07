@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/story-founders.jpg",
+        url: "/brewery/images/story-founders.jpg",
         width: 1200,
         height: 630,
         alt: "Brau Mitraa Technical Consultation & Contact",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Contact Us | Brau Mitraa",
     description:
       "Direct phone lines, email addresses, and technical consultation form for German-engineered breweries in India.",
-    images: ["/images/story-founders.jpg"],
+    images: ["/brewery/images/story-founders.jpg"],
   },
 };
 

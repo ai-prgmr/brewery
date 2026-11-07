@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/process/process-02-design.jpg",
+        url: "/brewery/images/process/process-02-design.jpg",
         width: 1200,
         height: 630,
         alt: "Brau Mitraa 5-Step Turnkey Brewery Process",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "The Brau Mitraa Process | From Idea to First Pour",
     description:
       "Discover the 5 proven steps of our turnkey brewery engineering methodology: Talk, Design, Build, Install, Train.",
-    images: ["/images/process/process-02-design.jpg"],
+    images: ["/brewery/images/process/process-02-design.jpg"],
   },
 };
 
@@ -70,7 +70,7 @@ const steps: ProcessStep[] = [
     title: "Let's Talk",
     subtitle: "Discovery, Feasibility & Target Scoping",
     lead: "Every successful brewery begins with a candid technical conversation. We listen closely to your vision, evaluate your space, and identify the exact commercial parameters needed for long-term profitability.",
-    image: "/images/process/process-01-talk.jpg",
+    image: "/brewery/images/process/process-01-talk.jpg",
     imageAlt: "Brewery founders and engineers discussing site floorplans over coffee",
     icon: IconMessage,
     deliverables: [
@@ -100,7 +100,7 @@ const steps: ProcessStep[] = [
     title: "Design",
     subtitle: "Custom 2D/3D CAD Layouts & P&ID Schematics",
     lead: "A brewery is a living machine where fluid dynamics, thermal kinetics, and ergonomics must intersect cleanly. We engineer custom blueprints tailored precisely to your building envelope.",
-    image: "/images/process/process-02-design.jpg",
+    image: "/brewery/images/process/process-02-design.jpg",
     imageAlt: "3D CAD brewhouse model and architectural blueprints on technical workstation",
     icon: IconCompass,
     deliverables: [
@@ -130,7 +130,7 @@ const steps: ProcessStep[] = [
     title: "Build",
     subtitle: "German Engineering & Precision Stainless Fabrication",
     lead: "In our dedicated manufacturing facility in Indore, we translate German DIN and TÜV sanitary standards into high-precision stainless steel machinery with zero metallurgical compromises.",
-    image: "/images/process/process-03-build.jpg",
+    image: "/brewery/images/process/process-03-build.jpg",
     imageAlt: "Skilled metal craftsman performing sanitary orbital TIG welding on a stainless brewery tank",
     icon: IconCpu,
     deliverables: [
@@ -160,7 +160,7 @@ const steps: ProcessStep[] = [
     title: "Install & Commission",
     subtitle: "Rigging, Utility Hookups & Hydrostatic Validation",
     lead: "Our installation engineers manage the physical placement, leveling, sanitary pipework, and electrical tie-ins, followed by rigorous wet trial runs to verify every valve and seal.",
-    image: "/images/process/process-04-install.jpg",
+    image: "/brewery/images/process/process-04-install.jpg",
     imageAlt: "Professional technicians installing stainless unitanks and piping manifold in brewery",
     icon: IconTruck,
     deliverables: [
@@ -190,7 +190,7 @@ const steps: ProcessStep[] = [
     title: "Train & Support",
     subtitle: "Master Brew Mentorship & Lifetime Mitraa Partnership",
     lead: "We don't hand over the keys and walk away. Our founders and brewmasters work alongside your crew on the brewdeck, ensuring your inaugural commercial batches pour to absolute perfection.",
-    image: "/images/process/process-05-train.jpg",
+    image: "/brewery/images/process/process-05-train.jpg",
     imageAlt: "Master brewer coaching a young brewing team at the brewhouse touch panel and testing wort",
     icon: IconSchool,
     deliverables: [

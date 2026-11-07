@@ -154,7 +154,7 @@ export function TechnologyContent() {
               <div className="lg:col-span-5 anim-enter-right">
                 <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5DFD5] aspect-[4/5] bg-[#EFECE4] group">
                   <Image
-                    src="/images/solution-brewery.jpg"
+                    src="/brewery/images/solution-brewery.jpg"
                     alt="Braupagode 1000L Vertical Brewhouse Stainless Steel Setup"
                     fill
                     sizes="(max-width: 1024px) 100vw, 40vw"

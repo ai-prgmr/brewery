@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Brau Mitraa",
     images: [
       {
-        url: "/images/solution-scale.jpg",
+        url: "/brewery/images/solution-scale.jpg",
         width: 1200,
         height: 630,
         alt: "Commercial Brewery Capacity Expansion by Brau Mitraa",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Scale Your Operation | Brau Mitraa Expansion Systems",
     description:
       "Engineered for growing breweries: multi-vessel brewhouses, 40HL-200HL unitank blocks, and high-throughput automation.",
-    images: ["/images/solution-scale.jpg"],
+    images: ["/brewery/images/solution-scale.jpg"],
   },
 };
 
@@ -235,7 +235,7 @@ export default function ScaleOperationPage() {
             <div className="lg:col-span-5 anim-enter-right">
               <div className="relative rounded-3xl overflow-hidden shadow-xl border border-[#E5DFD5] aspect-[4/3] bg-[#EFECE4] group">
                 <Image
-                  src="/images/solution-scale.jpg"
+                  src="/brewery/images/solution-scale.jpg"
                   alt="Large commercial fermentation tank farm and stainless brewhouse"
                   fill
                   priority
