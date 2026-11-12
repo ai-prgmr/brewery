@@ -75,14 +75,14 @@ function beerColorName(srm: number): string {
   return srm < 4
     ? "Pale straw"
     : srm < 8
-    ? "Gold"
-    : srm < 15
-    ? "Amber"
-    : srm < 25
-    ? "Brown"
-    : srm < 40
-    ? "Dark brown"
-    : "Black";
+      ? "Gold"
+      : srm < 15
+        ? "Amber"
+        : srm < 25
+          ? "Brown"
+          : srm < 40
+            ? "Dark brown"
+            : "Black";
 }
 
 interface ProcessState {
@@ -376,8 +376,8 @@ export function RecipeStudio() {
       mashTemp < 64
         ? "dry, highly fermentable"
         : mashTemp > 68
-        ? "full-bodied, sweet dextrins"
-        : "balanced fermentability";
+          ? "full-bodied, sweet dextrins"
+          : "balanced fermentability";
     log.push(
       `MASH at ${mashTemp}°C: ${mashWord}. Fermentable extract share: ${Math.round(
         attFrac * 100
@@ -411,8 +411,8 @@ export function RecipeStudio() {
     log.push(
       hops.length
         ? `BOIL ${boilMin} min: Hop utilisation factor ${Math.round(
-            util * 100
-          )}%, yielding ${Math.round(ibu)} IBU.`
+          util * 100
+        )}%, yielding ${Math.round(ibu)} IBU.`
         : `BOIL ${boilMin} min: Zero hop additions, resulting in 0 IBU.`
     );
 
@@ -653,12 +653,12 @@ export function RecipeStudio() {
         primaryYeast.id === "lacto"
           ? "Sour"
           : primaryYeast.id === "wild"
-          ? "Wild Ale"
-          : primaryYeast.type === "lager"
-          ? "Lager"
-          : honeyKg >= 0.5
-          ? "Honey Ale"
-          : "Ale";
+            ? "Wild Ale"
+            : primaryYeast.type === "lager"
+              ? "Lager"
+              : honeyKg >= 0.5
+                ? "Honey Ale"
+                : "Ale";
 
       finalStyle = {
         base: "Experimental",
@@ -926,11 +926,10 @@ export function RecipeStudio() {
           <div className="lg:col-span-7 space-y-8">
             {/* Shelf 1: Malts */}
             <section
-              className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${
-                highlightMissing && Object.keys(selectedMalts).length === 0
+              className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${highlightMissing && Object.keys(selectedMalts).length === 0
                   ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
                   : "border-[#E5DFD5]"
-              }`}
+                }`}
             >
               <div className="flex items-center justify-between pb-4 border-b border-[#E5DFD5] mb-5">
                 <div>
@@ -954,11 +953,10 @@ export function RecipeStudio() {
                     <div
                       key={item.id}
                       onClick={() => handleToggleMalt(item.id)}
-                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${
-                        isSelected
+                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
                           ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
                           : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-start gap-3">
                         <div
@@ -1041,11 +1039,10 @@ export function RecipeStudio() {
                     <div
                       key={item.id}
                       onClick={() => handleToggleHop(item.id)}
-                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${
-                        isSelected
+                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
                           ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
                           : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-start gap-3">
                         <div
@@ -1111,11 +1108,10 @@ export function RecipeStudio() {
 
             {/* Shelf 3: Yeast Strains */}
             <section
-              className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${
-                highlightMissing && !selectedYeast
+              className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${highlightMissing && !selectedYeast
                   ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
                   : "border-[#E5DFD5]"
-              }`}
+                }`}
             >
               <div className="flex items-center justify-between pb-4 border-b border-[#E5DFD5] mb-5">
                 <div>
@@ -1140,11 +1136,10 @@ export function RecipeStudio() {
                     <div
                       key={item.id}
                       onClick={() => handleSelectYeast(item.id)}
-                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex items-start gap-3.5 ${
-                        isSelected
+                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex items-start gap-3.5 ${isSelected
                           ? "border-[#D49B44] bg-[#FAF8F5] ring-2 ring-[#D49B44]/40 shadow-sm"
                           : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
-                      }`}
+                        }`}
                     >
                       <div
                         className="w-10 h-10 shrink-0 rounded-lg bg-white border border-[#E5DFD5] flex items-center justify-center p-1 overflow-hidden"
@@ -1158,11 +1153,10 @@ export function RecipeStudio() {
                             {item.name}
                           </span>
                           <span
-                            className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${
-                              isSelected
+                            className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${isSelected
                                 ? "bg-[#D49B44] text-white"
                                 : "bg-[#EFE9DF] text-[#76736A]"
-                            }`}
+                              }`}
                           >
                             {isSelected ? "Active" : "Select"}
                           </span>
@@ -1206,11 +1200,10 @@ export function RecipeStudio() {
                     <div
                       key={item.id}
                       onClick={() => handleToggleAdjunct(item.id)}
-                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${
-                        isSelected
+                      className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
                           ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
                           : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
-                      }`}
+                        }`}
                     >
                       <div className="flex items-start gap-3">
                         <div
@@ -1430,11 +1423,10 @@ export function RecipeStudio() {
                             ageMode: opt.key as "none" | "cold" | "oak",
                           })
                         }
-                        className={`py-2 px-2 text-xs font-semibold rounded-lg border transition-all text-center ${
-                          process.ageMode === opt.key
+                        className={`py-2 px-2 text-xs font-semibold rounded-lg border transition-all text-center ${process.ageMode === opt.key
                             ? "bg-[#1A1A18] text-white border-[#1A1A18]"
                             : "bg-[#F4EFE6] text-[#42403B] border-[#E5DFD5] hover:bg-[#EFE9DF]"
-                        }`}
+                          }`}
                       >
                         {opt.label}
                       </button>
@@ -1452,15 +1444,14 @@ export function RecipeStudio() {
             {/* Visual Tank Simulation Scene */}
             <div
               ref={sceneRef}
-              className="relative rounded-2xl overflow-hidden border-2 border-[#1A1A18] bg-gradient-to-b from-[#FAF1E4] to-[#F1DFC0] p-6 h-[380px] shadow-lg flex flex-col items-center justify-between"
+              className="relative rounded-2xl overflow-hidden border-2 border-[#1A1A18] bg-gradient-to-b from-[#FAF1E4] to-[#F1DFC0] p-6 h-auto shadow-lg flex flex-col items-center justify-between"
             >
               {/* Stage Status Badge */}
               <div className="w-full flex items-center justify-between z-10">
                 <div className="inline-flex items-center gap-2 bg-[#1A1A18]/85 text-[#FFF4DC] px-3.5 py-1.5 rounded-full text-xs font-medium backdrop-blur-sm shadow-sm max-w-[85%] truncate">
                   <span
-                    className={`w-2 h-2 rounded-full ${
-                      isBrewing ? "bg-[#D49B44] animate-ping" : "bg-emerald-400"
-                    }`}
+                    className={`w-2 h-2 rounded-full ${isBrewing ? "bg-[#D49B44] animate-ping" : "bg-emerald-400"
+                      }`}
                   />
                   <span className="truncate">{stageLabel}</span>
                 </div>
@@ -1883,8 +1874,8 @@ export function RecipeStudio() {
                         {result.sweetIdx >= 6
                           ? "Sweet & Dextrinous"
                           : result.sweetIdx >= 3
-                          ? "Balanced Crispness"
-                          : "Dry & Attenuated"}
+                            ? "Balanced Crispness"
+                            : "Dry & Attenuated"}
                       </span>
                     </div>
                     <div className="h-2 w-full bg-[#EFE9DF] rounded-full overflow-hidden">

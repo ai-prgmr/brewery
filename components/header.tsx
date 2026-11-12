@@ -14,8 +14,8 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md transition-all duration-300 header-animated">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+    <header className="z-50 bg-[#FAF8F5]/90 backdrop-blur-md transition-all duration-300 header-animated">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-28 flex items-center justify-between">
         {/* Logo Component */}
         <Link
           className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 rounded-lg"
@@ -27,7 +27,6 @@ export function Header() {
               alt="Brau Mitraa"
               width={200}
               height={200}
-              className="pt-4 mt-4"
             />
           </div>
         </Link>
@@ -110,14 +109,6 @@ export function Header() {
             href="/beverages"
           >
             Beverage Portfolio
-          </Link>
-
-          <Link
-            className="nav-link-editorial hover:text-[#D49B44] text-[#D49B44] font-semibold py-2 flex items-center gap-1"
-            href="/recipe-studio"
-          >
-            <span>Recipe Studio</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-[#D49B44] animate-pulse" />
           </Link>
 
           <Link
@@ -226,14 +217,6 @@ export function Header() {
             className="block text-sm font-semibold text-[#1A1A18]"
           >
             Beverage Portfolio
-          </Link>
-          <Link
-            href="/recipe-studio"
-            onClick={() => setMobileMenuOpen(false)}
-            className="block text-sm font-semibold text-[#D49B44] flex items-center justify-between"
-          >
-            <span>Recipe Studio (Virtual Lab)</span>
-            <span className="text-[10px] uppercase tracking-wider bg-[#D49B44]/15 px-2 py-0.5 rounded-full font-bold">New</span>
           </Link>
           <Link
             href="/process"

@@ -47,3 +47,4 @@ export const metadata: Metadata = {
 export default function RecipeStudioPage() {
   return <RecipeStudio />;
 }
+
