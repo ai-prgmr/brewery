@@ -329,85 +329,117 @@ export default function EquipmentSystems({
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Pillar 1 */}
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
-                  <IconShieldCheck className="w-5 h-5" />
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] flex flex-col justify-between space-y-4 hover:border-[#D49B44]/50 transition-colors shadow-sm">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
+                    <IconShieldCheck className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#D49B44] block">
+                      Zero CIP Headache
+                    </span>
+                    <h4 className="font-serif font-bold text-lg text-[#1A1A18] mt-0.5">
+                      Dual-Layer Sanitary Core
+                    </h4>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
+                    The wort and cleaning fluids never touch copper. The interior is fabricated from
+                    food-grade <strong>AISI 304 or 316L stainless steel</strong>. You use standard
+                    automated caustic and acid CIP cycles with zero leaching, zero corrosion, and 100% hygiene.
+                  </p>
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#1A1A18]">
-                  Dual-Layer Sanitary Core
-                </h4>
-                <p className="text-xs text-[#76736A] uppercase font-semibold">
-                  Zero CIP Headache
-                </p>
-                <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
-                  The wort and cleaning fluids never touch copper. The interior is fabricated from
-                  food-grade <strong>AISI 304 or 316L stainless steel</strong>. You use standard
-                  automated caustic and acid CIP cycles with zero leaching, zero corrosion, and 100% hygiene.
-                </p>
               </div>
 
               {/* Pillar 2 */}
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] space-y-3">
-                <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
-                  <IconSparkles className="w-5 h-5" />
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] flex flex-col justify-between space-y-4 hover:border-[#D49B44]/50 transition-colors shadow-sm">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
+                    <IconSparkles className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#D49B44] block">
+                      No Daily Polishing
+                    </span>
+                    <h4 className="font-serif font-bold text-lg text-[#1A1A18] mt-0.5">
+                      Nano-Sealed Anti-Tarnish
+                    </h4>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
+                    Our exterior copper cladding is factory-sealed with an industrial high-temperature
+                    protective clear coat. It resists oxidation, moisture, and fingerprints. Daily
+                    maintenance requires nothing more than a gentle wipe with a microfiber cloth.
+                  </p>
                 </div>
-                <h4 className="font-serif font-bold text-lg text-[#1A1A18]">
-                  Nano-Sealed Anti-Tarnish
-                </h4>
-                <p className="text-xs text-[#76736A] uppercase font-semibold">
-                  No Daily Polishing
-                </p>
-                <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
-                  Our exterior copper cladding is factory-sealed with an industrial high-temperature
-                  protective clear coat. It resists oxidation, moisture, and fingerprints. Daily
-                  maintenance requires nothing more than a gentle wipe with a microfiber cloth.
-                </p>
               </div>
 
               {/* Pillar 3 */}
-              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
-                <IconCoin className="w-5 h-5" />
-              </div>
-              <h4 className="font-serif font-bold text-lg text-[#1A1A18]">
-                Taproom Pint Premium
-              </h4>
-              <p className="text-xs text-[#76736A] uppercase font-semibold">
-                Measurable Financial ROI
-              </p>
-              <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
-                In a brewpub, the brewhouse is your central architectural centerpiece. Guests
-                willingly pay <strong>15%–25% higher margins</strong> for beer brewed in an authentic
-                copper cathedral. Most taprooms fully amortize the copper upgrade within 6 to 9 months.
-              </p>
-            </div>
-
-            {/* Pillar 4 */}
-            <div className="grid grid-cols-1 md:grid-cols-1">
-              <div className="bg-white/90 backdrop-blur rounded-2xl p-6 border border-[#D49B44]/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-                <div className="space-y-2 max-w-3xl">
-                  <div className="flex items-center gap-2 text-xs font-bold uppercase text-[#D49B44] tracking-wider">
-                    <IconTemperature className="w-4 h-4" />
-                    <span>Thermodynamics & Flavor Chemistry</span>
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] flex flex-col justify-between space-y-4 hover:border-[#D49B44]/50 transition-colors shadow-sm">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
+                    <IconCoin className="w-5 h-5" />
                   </div>
-                  <h4 className="font-serif font-bold text-xl text-[#1A1A18]">
-                    Natural Sulfur Scavenging & 20x Faster Thermal Conduction
-                  </h4>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#D49B44] block">
+                      Measurable Financial ROI
+                    </span>
+                    <h4 className="font-serif font-bold text-lg text-[#1A1A18] mt-0.5">
+                      Taproom Pint Premium
+                    </h4>
+                  </div>
                   <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
-                    Beyond sheer aesthetics, copper acts as a chemical catalyst that binds volatile
-                    dimethyl sulfide (DMS) during boiling, preventing cabbage-like off-notes.
-                    Its thermal conductivity (~390 W/m·K) ensures rapid heat dispersion, preventing hot-spot
-                    scorching and providing smooth, authentic Bavarian malt profiles.
+                    In a brewpub, the brewhouse is your central architectural centerpiece. Guests
+                    willingly pay <strong>15%–25% higher margins</strong> for beer brewed in an authentic
+                    copper cathedral. Most taprooms fully amortize the copper upgrade within 6 to 9 months.
                   </p>
                 </div>
-
-                <Link
-                  href="/contact?topic=copper-consultation"
-                  className="inline-flex items-center gap-2 bg-[#D49B44] hover:bg-[#BE8532] text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-full whitespace-nowrap shadow transition-transform hover:scale-105 shrink-0"
-                >
-                  <span>Discuss With Our Brewmaster</span>
-                  <IconArrowRight className="w-4 h-4" />
-                </Link>
               </div>
+
+              {/* Pillar 4 */}
+              <div className="bg-white/80 backdrop-blur rounded-2xl p-6 border border-[#E5DFD5] flex flex-col justify-between space-y-4 hover:border-[#D49B44]/50 transition-colors shadow-sm">
+                <div className="space-y-3">
+                  <div className="w-10 h-10 rounded-full bg-[#FAF8F5] border border-[#D49B44]/40 flex items-center justify-center text-[#D49B44]">
+                    <IconTemperature className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#D49B44] block">
+                      Thermodynamics & Flavor
+                    </span>
+                    <h4 className="font-serif font-bold text-lg text-[#1A1A18] mt-0.5">
+                      Sulfur Binding & 20x Heat
+                    </h4>
+                  </div>
+                  <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
+                    Copper conducts heat ~20x faster than steel (~390 W/m·K), preventing scorch points
+                    during decoction. Natural catalytic reaction binds volatile dimethyl sulfide (DMS)
+                    during boiling for remarkably crisp, clean, rounded European malt profiles.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Action Bar */}
+            <div className="mt-8 bg-white/90 backdrop-blur rounded-2xl p-6 sm:p-8 border border-[#D49B44]/40 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+              <div className="space-y-1.5 max-w-3xl">
+                <div className="flex items-center gap-2 text-xs font-bold uppercase text-[#D49B44] tracking-wider">
+                  <IconSparkles className="w-4 h-4" />
+                  <span>Custom Engineering & Metallurgy Feasibility</span>
+                </div>
+                <h4 className="font-serif font-bold text-xl sm:text-2xl text-[#1A1A18]">
+                  Want to evaluate copper for your specific floor plan & draft volume?
+                </h4>
+                <p className="text-xs sm:text-sm text-[#42403B] leading-relaxed">
+                  Our German master brewer and Indian engineering directors calculate your projected
+                  draft margin increase, thermal efficiency savings, and space ergonomics.
+                </p>
+              </div>
+
+              <Link
+                href="/contact?topic=copper-consultation"
+                className="inline-flex items-center gap-2 bg-[#D49B44] hover:bg-[#BE8532] text-white text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded-full whitespace-nowrap shadow transition-transform hover:scale-105 shrink-0"
+              >
+                <span>Discuss With Our Brewmaster</span>
+                <IconArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </div>
@@ -551,3 +583,4 @@ export default function EquipmentSystems({
     </section>
   );
 }
+
