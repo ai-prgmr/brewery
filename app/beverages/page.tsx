@@ -329,13 +329,31 @@ export default function BeveragePortfolioPage() {
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#1A1A18] tracking-tight leading-[1.08] mb-6">
             Beyond traditional beer: what will you brew?
           </h1>
-          <p className="text-base sm:text-lg text-[#42403B] leading-relaxed">
+          <p className="text-base sm:text-lg text-[#42403B] leading-relaxed mb-6">
             From heritage German lagers and hazy IPAs to probiotic kombucha,
             heritage hard ciders, sparkling hop waters, and fermented meads.
             Brau Mitraa designs and equips multi-beverage facilities with the
             exact isolation valves, thermal controls, and aeration systems
             needed for multi-category production.
           </p>
+
+          {/* Recipe Studio Formulation CTA */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-1">
+            <Link
+              href="/recipe-studio"
+              className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full bg-[#1A1A18] hover:bg-[#D49B44] text-white text-xs font-semibold uppercase tracking-wider transition-all duration-200 shadow-md group"
+            >
+              <span className="w-2 h-2 rounded-full bg-[#D49B44] group-hover:bg-white animate-pulse" />
+              <span>Formulate in Interactive Recipe Studio</span>
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full border border-[#E5DFD5] bg-white hover:bg-[#F4EFE6] text-[#1A1A18] text-xs font-semibold uppercase tracking-wider transition-all duration-200"
+            >
+              Custom Engineering Consultation
+            </Link>
+          </div>
         </div>
 
         {/* Interactive Search & Filter Controls */}

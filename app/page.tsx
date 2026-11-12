@@ -614,6 +614,13 @@ export default function HomePage() {
             </div>
             <div className="flex items-center gap-4">
               <Link
+                className="hidden sm:inline-flex text-xs uppercase tracking-wider font-semibold text-[#D49B44] hover:text-[#B8822B] transition-colors items-center gap-1.5 px-3.5 py-2 rounded-full bg-[#D49B44]/10 border border-[#D49B44]/30"
+                href="/recipe-studio"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#D49B44] animate-pulse" />
+                <span>Recipe Studio</span>
+              </Link>
+              <Link
                 className="text-xs uppercase tracking-wider font-semibold text-[#1A1A18] hover:text-[#D49B44] transition-colors group flex items-center gap-1"
                 href="/beverages"
               >
@@ -669,6 +676,31 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+
+          {/* Interactive Recipe Studio Formulation CTA */}
+          <div className="mt-12 p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-[#1A1A18] via-[#2A2925] to-[#1A1A18] text-white border border-[#D49B44]/30 shadow-xl flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+            <div className="max-w-2xl space-y-3">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D49B44]/20 border border-[#D49B44]/40 text-[#D49B44] text-xs font-semibold uppercase tracking-wider">
+                <span className="w-2 h-2 rounded-full bg-[#D49B44] animate-pulse" />
+                Virtual Brewhouse Formulation Lab
+              </div>
+              <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white tracking-tight">
+                Craft & Test Your Dream Beer in Real Time
+              </h3>
+              <p className="text-sm sm:text-base text-[#C5BFB5] leading-relaxed">
+                Step into our interactive recipe studio. Formulate grain bills, calculate Tinseth IBU & Morey SRM, fine-tune fermentation kinetics, and simulate commercial brewhouse production with live batch telemetry.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 shrink-0">
+              <Link
+                href="/recipe-studio"
+                className="px-7 py-3.5 rounded-full bg-[#D49B44] hover:bg-[#B8822B] text-white font-semibold text-xs uppercase tracking-wider transition-all duration-200 shadow-md text-center flex items-center justify-center gap-2 group"
+              >
+                <span>Launch Recipe Studio</span>
+                <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

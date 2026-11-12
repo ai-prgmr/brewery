@@ -84,6 +84,12 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link className="text-[#D49B44] font-semibold hover:underline flex items-center gap-1" href="/recipe-studio">
+                  <span>Interactive Recipe Studio</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#D49B44] animate-pulse" />
+                </Link>
+              </li>
+              <li>
                 <Link className="hover:text-[#D49B44] transition-colors" href="/beverages#lagers">
                   Lagers & Pilsners
                 </Link>
