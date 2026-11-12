@@ -12,6 +12,7 @@ import {
   IconChartLine,
   IconShieldCheck,
 } from "@tabler/icons-react";
+import EquipmentSystems from "@/components/equipment-systems";
 
 export const metadata: Metadata = {
   title: "Scale Existing Operation | Brewery Capacity Expansion — Brau Mitraa",
@@ -348,6 +349,9 @@ export default function ScaleOperationPage() {
           </div>
         </div>
       </section>
+
+      {/* Equipment Systems: Copper Showpiece vs Stainless Workhorse */}
+      <EquipmentSystems pageType="solution-scale" />
 
       {/* Zero Downtime Methodology */}
       <section className="py-20 lg:py-24 bg-[#FAF8F5] border-b border-[#E5DFD5]">

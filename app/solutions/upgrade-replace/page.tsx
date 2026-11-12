@@ -12,6 +12,7 @@ import {
   IconGauge,
   IconRefresh,
 } from "@tabler/icons-react";
+import EquipmentSystems from "@/components/equipment-systems";
 
 export const metadata: Metadata = {
   title: "Upgrade or Replace | Brewery Equipment & Tank Retrofits — Brau Mitraa",
@@ -347,6 +348,9 @@ export default function UpgradeReplacePage() {
           </div>
         </div>
       </section>
+
+      {/* Equipment Systems: Copper Cladding & Stainless Upgrades */}
+      <EquipmentSystems pageType="solution-upgrade" />
 
       {/* Spare Parts Inventory */}
       <section className="py-20 lg:py-24 bg-[#FAF8F5] border-b border-[#E5DFD5]">

@@ -11,6 +11,8 @@ import {
 
 const projectTypes = [
   "Turnkey Microbrewery (Braupagode 500L - 2,000L)",
+  "Handcrafted Copper Brewhouse (Showpiece Taproom)",
+  "Industrial Stainless Steel Brewhouse (Commercial Scale)",
   "Commercial Production Brewhouse (20HL - 100HL+)",
   "Cellar Expansion (Fermenters / Unitanks / BBTs)",
   "Beverage Formulation (Beer, Kombucha, Seltzers)",

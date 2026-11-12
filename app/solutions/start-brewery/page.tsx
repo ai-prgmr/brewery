@@ -13,6 +13,7 @@ import {
   IconTools,
   IconClock,
 } from "@tabler/icons-react";
+import EquipmentSystems from "@/components/equipment-systems";
 
 export const metadata: Metadata = {
   title: "Start New Brewery | Turnkey Microbrewery Solutions — Brau Mitraa",
@@ -125,6 +126,26 @@ export default function StartBreweryPage() {
           "@type": "OfferCatalog",
           "name": "Turnkey Brewing Equipment",
           "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Handcrafted Copper Brewhouse (Kupfer-Sudhaus)",
+                "description":
+                  "Bavarian-engineered copper showpiece brewhouse with sanitary AISI 304/316L interior, anti-tarnish nano-lacquering, and 20x faster thermal conductivity.",
+                "image": "https://braumitraa.com/brewery/images/equipment-copper-brewhouse.jpg",
+              },
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Industrial Stainless Steel Brewhouse (Edelstahl-Sudhaus)",
+                "description":
+                  "High-throughput commercial craft brewhouse fabricated with 100% certified AISI 304/316L stainless steel, laser-welded dimple jackets, and PLC automation.",
+                "image": "https://braumitraa.com/brewery/images/equipment-stainless-brewhouse.jpg",
+              },
+            },
             {
               "@type": "Offer",
               "itemOffered": {
@@ -353,6 +374,9 @@ export default function StartBreweryPage() {
           </div>
         </div>
       </section>
+
+      {/* Equipment Systems: Copper vs Stainless Steel */}
+      <EquipmentSystems pageType="solution-start" />
 
       {/* The 4-Step Journey */}
       <section className="py-20 lg:py-24 bg-[#FAF8F5] border-b border-[#E5DFD5]">

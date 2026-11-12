@@ -8,31 +8,27 @@ import {
   IconMenu2,
   IconX,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md border-b border-[#E5DFD5] transition-all duration-300 header-animated">
+    <header className="sticky top-0 z-50 bg-[#FAF8F5]/90 backdrop-blur-md  transition-all duration-300 header-animated">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo Component */}
         <Link
-          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#D49B44] rounded-lg"
+          className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 rounded-lg"
           href="/"
         >
-          <div className="w-10 h-10 rounded-full border border-[#D49B44]/60 flex items-center justify-center bg-[#F4EFE6] text-[#D49B44] transition-transform duration-300 group-hover:scale-105 shadow-sm">
-            {/* Wheat / Hops Emblem Icon */}
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2C10.5 4 9 7.5 9 11c0 2.5.8 4.7 2 6.3V22h2v-4.7c1.2-1.6 2-3.8 2-6.3 0-3.5-1.5-7-3-9zm0 3.5c.8 1.8 1.5 4 1.5 5.5 0 1.6-.5 3-1.5 4.2-1-1.2-1.5-2.6-1.5-4.2 0-1.5.7-3.7 1.5-5.5zM6.5 6.5C5.4 7.6 4.5 9.2 4.5 11c0 2.5 1.5 4.8 3.5 6v-2.2c-1-.9-1.5-2.2-1.5-3.8 0-1.1.5-2.2 1-3l-1-1.5zm11 0l-1 1.5c.5.8 1 1.9 1 3 0 1.6-.5 2.9-1.5 3.8V17c2-1.2 3.5-3.5 3.5-6 0-1.8-.9-3.4-2-4.5z" />
-            </svg>
-          </div>
-          <div>
-            <span className="block font-serif text-2xl font-bold tracking-tight text-[#1A1A18] leading-none">
-              BRAU MITRAA
-            </span>
-            <span className="block text-[9px] uppercase tracking-[0.24em] text-[#76736A] font-semibold mt-0.5">
-              Brewing Possibilities Together
-            </span>
+          <div className=" flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <Image
+              src="/brewery/brau-mitraa-logo.png"
+              alt="Brau Mitraa"
+              width={200}
+              height={200}
+              className="pt-4 mt-4"
+            />
           </div>
         </Link>
 
@@ -82,8 +78,19 @@ export function Header() {
               </Link>
               <div className="pt-1 mt-1 border-t border-[#E5DFD5]">
                 <Link
+                  href="/#equipment-systems"
+                  className="nav-dropdown-item block px-4 py-2 text-xs hover:bg-[#FAF8F5] group/item"
+                >
+                  <span className="font-semibold block text-[#D49B44] transition-colors">
+                    Copper vs. Stainless Brewhouses &rarr;
+                  </span>
+                  <span className="text-[10px] text-[#76736A] block">
+                    Why copper is an investment, not a headache
+                  </span>
+                </Link>
+                <Link
                   href="/#solutions"
-                  className="block px-4 py-1.5 text-[11px] font-semibold text-[#D49B44] hover:bg-[#FAF8F5] transition-colors"
+                  className="block px-4 py-1.5 text-[11px] font-semibold text-[#1A1A18] hover:text-[#D49B44] hover:bg-[#FAF8F5] transition-colors"
                 >
                   View All Solutions &rarr;
                 </Link>
@@ -188,6 +195,13 @@ export function Header() {
                 className="block text-sm font-medium text-[#1A1A18] hover:text-[#D49B44]"
               >
                 Upgrade or Replace
+              </Link>
+              <Link
+                href="/#equipment-systems"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block text-sm font-semibold text-[#D49B44] hover:underline pt-1"
+              >
+                Copper vs. Stainless Brewhouses &rarr;
               </Link>
             </div>
           </div>

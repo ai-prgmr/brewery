@@ -4,7 +4,7 @@ import {
   IconBrandInstagram,
   IconBrandYoutube,
 } from "@tabler/icons-react";
-
+import Image from "next/image";
 export function Footer() {
   return (
     <footer
@@ -17,18 +17,14 @@ export function Footer() {
           {/* Logo Brand Column */}
           <div className="col-span-2 md:col-span-6 lg:col-span-4 space-y-4">
             <Link className="flex items-center gap-3" href="/">
-              <div className="w-9 h-9 rounded-full border border-[#D49B44] flex items-center justify-center bg-[#F4EFE6] text-[#D49B44]">
-                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 2C10.5 4 9 7.5 9 11c0 2.5.8 4.7 2 6.3V22h2v-4.7c1.2-1.6 2-3.8 2-6.3 0-3.5-1.5-7-3-9zm0 3.5c.8 1.8 1.5 4 1.5 5.5 0 1.6-.5 3-1.5 4.2-1-1.2-1.5-2.6-1.5-4.2 0-1.5.7-3.7 1.5-5.5zM6.5 6.5C5.4 7.6 4.5 9.2 4.5 11c0 2.5 1.5 4.8 3.5 6v-2.2c-1-.9-1.5-2.2-1.5-3.8 0-1.1.5-2.2 1-3l-1-1.5zm11 0l-1 1.5c.5.8 1 1.9 1 3 0 1.6-.5 2.9-1.5 3.8V17c2-1.2 3.5-3.5 3.5-6 0-1.8-.9-3.4-2-4.5z" />
-                </svg>
-              </div>
-              <div>
-                <span className="block font-serif text-xl font-bold tracking-tight text-[#1A1A18] leading-none">
-                  BRAU MITRAA
-                </span>
-                <span className="block text-[8px] uppercase tracking-[0.2em] text-[#76736A] font-semibold">
-                  Brewing Possibilities Together
-                </span>
+              <div className=" flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/brewery/brau-mitraa-logo.png"
+                  alt="Brau Mitraa"
+                  width={200}
+                  height={200}
+                  className="pt-4 mt-4"
+                />
               </div>
             </Link>
             <p className="text-xs text-[#76736A] leading-relaxed max-w-xs">
@@ -56,6 +52,11 @@ export function Footer() {
               <li>
                 <Link className="hover:text-[#D49B44] transition-colors" href="/solutions/upgrade-replace">
                   Upgrade or Replace
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-[#D49B44] transition-colors" href="/#equipment-systems">
+                  Copper vs. Stainless Systems
                 </Link>
               </li>
               <li>

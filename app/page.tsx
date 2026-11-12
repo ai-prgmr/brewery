@@ -25,6 +25,7 @@ import {
   IconX,
   IconCheck,
 } from "@tabler/icons-react";
+import EquipmentSystems from "@/components/equipment-systems";
 
 export default function HomePage() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -505,6 +506,10 @@ export default function HomePage() {
         </div>
       </section>
       {/* END: SolutionsSection */}
+
+      {/* BEGIN: EquipmentSystemsSection (Copper vs Stainless Steel) */}
+      <EquipmentSystems pageType="home" />
+      {/* END: EquipmentSystemsSection */}
 
       {/* BEGIN: TechnologySection */}
       <section
