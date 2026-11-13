@@ -96,7 +96,7 @@ const zeroDowntimeSteps = [
   {
     number: "02",
     title: "Pre-Piped Skid Modular Delivery",
-    desc: "Valves, pumps, and manifolds are skid-mounted and pre-wired in our Indore facility, reducing messy on-site welding and electrical delays.",
+    desc: "Valves, pumps, and manifolds are skid-mounted and pre-wired in our Indian industrial hub, reducing messy on-site welding and electrical delays.",
   },
   {
     number: "03",

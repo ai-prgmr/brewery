@@ -249,7 +249,7 @@ export default function UpgradeReplacePage() {
                     Sanitary Valves, CIP Carts & Tank Retrofits
                   </p>
                   <p className="text-stone-300 text-[11px]">
-                    DIN 11851 / Tri-Clamp standards · Rapid dispatch from Indore
+                    DIN 11851 / Tri-Clamp standards · Rapid dispatch from our Indian industrial hub
                   </p>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function UpgradeReplacePage() {
                 24h
               </span>
               <p className="text-xs font-semibold text-[#1A1A18]">Spare Dispatch</p>
-              <p className="text-[11px] text-[#76736A]">From our Indore central stock</p>
+              <p className="text-[11px] text-[#76736A]">From our Indian industrial hub stock</p>
             </div>
           </div>
         </div>
@@ -364,7 +364,7 @@ export default function UpgradeReplacePage() {
             </h2>
             <p className="text-sm sm:text-base text-[#76736A]">
               Never let a failed seal or damaged valve halt a packaging run. We
-              maintain rapid-dispatch inventory in Indore.
+              maintain rapid-dispatch inventory at our Indian industrial hub.
             </p>
           </div>
 

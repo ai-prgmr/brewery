@@ -89,7 +89,7 @@ const founders: Founder[] = [
   {
     name: "Abhay Jhaveri",
     role: "Co-Founder & Managing Director",
-    location: "Indore, India",
+    location: "Indian Industrial Hub, India",
     country: "India",
     flag: "🇮🇳",
     image: "/brewery/images/founders/abhay-jhaveri.jpg",
@@ -99,12 +99,12 @@ const founders: Founder[] = [
     isRound: false,
     credentials: [
       "Industrialist & Managing Director",
-      "Advanced Manufacturing Hub, Indore",
+      "Advanced Manufacturing, Indian Industrial Hub",
       "Turnkey Project Leadership",
     ],
-    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's manufacturing infrastructure, supply chain, and business operations in Indore. He recognized that regional craft brewers faced a punishing compromise between exorbitant European import costs and inconsistent local fabrications. Abhay established the precision manufacturing protocols that bring German engineering tolerances to life in India.",
+    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's manufacturing infrastructure, supply chain, and business operations at our Indian industrial hub. He recognized that regional craft brewers faced a punishing compromise between exorbitant European import costs and inconsistent local fabrications. Abhay established the precision manufacturing protocols that bring German engineering tolerances to life in India.",
     responsibilities: [
-      "Precision SS304/SS316 fabrication management in Indore",
+      "Precision SS304/SS316 fabrication management at Indian Industrial Hub",
       "Turnkey project delivery & commercial contracting",
       "Strategic equipment sourcing & quality assurance",
       "Client commissioning, spare parts logistics & lifetime support",
@@ -203,7 +203,7 @@ export default function AboutPage() {
           },
           {
             "@type": "Place",
-            "name": "Indore, India",
+            "name": "Indian Industrial Hub, India",
           },
         ],
         "founders": founders.map((f) => ({
@@ -282,10 +282,10 @@ export default function AboutPage() {
                 rigid aloofness of traditional imports.
               </p>
               <p className="text-sm sm:text-base text-[#76736A] leading-relaxed max-w-2xl">
-                By uniting Germany’s master brewing lineage with India’s advanced
-                sanitary fabrication in Indore, we provide end-to-end turnkey
-                solutions that empower visionary brewers from first blueprint to
-                first pour.
+                By uniting Germany’s master brewing lineage with our advanced
+                sanitary fabrication at the Indian industrial hub, we provide
+                end-to-end turnkey solutions that empower visionary brewers from
+                first blueprint to first pour.
               </p>
             </div>
 
@@ -491,8 +491,8 @@ export default function AboutPage() {
                 Brau Mitraa was created to abolish this false tradeoff. Rainer and
                 Rüdiger design and certify every system to German industrial
                 standards, while Abhay oversees meticulous stainless steel
-                fabrication in Indore. The result is pure German engineering
-                rigor at local manufacturing efficiency.
+                fabrication at our Indian industrial hub. The result is pure
+                German engineering rigor at local manufacturing efficiency.
               </p>
 
               <div className="pt-2">
@@ -553,7 +553,7 @@ export default function AboutPage() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl">🇮🇳</span>
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#D49B44] bg-[#F4EFE6] px-2.5 py-1 rounded-full border border-[#D49B44]/20">
-                    Indore Industrial Hub
+                    Indian Industrial Hub
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">

@@ -92,7 +92,7 @@ const turnkeySteps = [
   {
     step: "02",
     title: "Precision Engineering & Fabrication",
-    desc: "Vessels are manufactured in our Indore hub using food-grade SS304/SS316 with IIIc mill finish welds, purged orbital piping, and low-chloride insulation certified to German standards.",
+    desc: "Vessels are manufactured in our Indian industrial hub using food-grade SS304/SS316 with IIIc mill finish welds, purged orbital piping, and low-chloride insulation certified to German standards.",
   },
   {
     step: "03",

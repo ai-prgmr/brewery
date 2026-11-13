@@ -202,7 +202,7 @@ export default function ContactPage() {
                   <div className="p-4 rounded-2xl bg-[#FDFBF7] border border-[#E5DFD5] space-y-1">
                     <div className="flex items-center justify-between text-xs font-semibold text-[#76736A]">
                       <span className="flex items-center gap-1.5 text-[#1A1A18]">
-                        <span>🇮🇳</span> India Hub (Indore)
+                        <span>🇮🇳</span> Indian Industrial Hub
                       </span>
                       <span>Mon – Sat, 9am – 7pm IST</span>
                     </div>
@@ -331,7 +331,7 @@ export default function ContactPage() {
                   Manufacturing & Assembly Hub (India)
                 </h4>
                 <p className="text-xs text-[#76736A] mt-0.5 leading-relaxed">
-                  Sanwer Road Industrial Area, Indore, Madhya Pradesh, India.
+                  Sanwer Industrial Zone, Indian Industrial Hub, India.
                   Facility visits for tank inspections are welcomed by appointment.
                 </p>
               </div>

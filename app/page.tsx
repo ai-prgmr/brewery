@@ -310,8 +310,8 @@ export default function HomePage() {
               <p className="text-sm text-[#76736A] leading-relaxed">
                 Brau Mitraa was created to abolish this false tradeoff. Master
                 brewers and engineers design and certify every system to German
-                industrial DIN/TÜV standards, while our advanced manufacturing
-                hub in Indore executes precision stainless fabrication. The
+                industrial DIN/TÜV standards, while our advanced Indian
+                industrial hub executes precision stainless fabrication. The
                 result is pure German engineering rigor at accessible local
                 manufacturing efficiency.
               </p>
@@ -382,7 +382,7 @@ export default function HomePage() {
                 <div className="flex items-center justify-between">
                   <span className="text-2xl">🇮🇳</span>
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#D49B44] bg-[#F4EFE6] px-2.5 py-1 rounded-full border border-[#D49B44]/20">
-                    Indore Industrial Hub
+                    Indian Industrial Hub
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">

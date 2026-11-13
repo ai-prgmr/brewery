@@ -129,7 +129,7 @@ const steps: ProcessStep[] = [
     phase: "PHASE 03 · ADVANCED MANUFACTURING",
     title: "Build",
     subtitle: "German Engineering & Precision Stainless Fabrication",
-    lead: "In our dedicated manufacturing facility in Indore, we translate German DIN and TÜV sanitary standards into high-precision stainless steel machinery with zero metallurgical compromises.",
+    lead: "In our dedicated Indian industrial manufacturing hub, we translate German DIN and TÜV sanitary standards into high-precision stainless steel machinery with zero metallurgical compromises.",
     image: "/brewery/images/process/process-03-build.jpg",
     imageAlt: "Skilled metal craftsman performing sanitary orbital TIG welding on a stainless brewery tank",
     icon: IconCpu,
@@ -197,7 +197,7 @@ const steps: ProcessStep[] = [
       "On-deck brewmaster coaching for your first commercial brew cycles",
       "Access to 130+ validated craft beer, kombucha, and seltzer formulations",
       "Comprehensive staff Standard Operating Procedures (SOP) and safety manuals",
-      "Lifetime Mitraa guarantee with rapid 24h spare parts dispatch from Indore",
+      "Lifetime Mitraa guarantee with rapid 24h spare parts dispatch from our Indian industrial hub",
     ],
     inDepthPoints: [
       {
@@ -538,7 +538,7 @@ export default function ProcessPage() {
                 </div>
                 <div className="col-span-4 text-[#1A1A18] font-medium flex items-center gap-1.5">
                   <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0" />
-                  <span>24h dispatch from central Indore warehouse</span>
+                  <span>24h dispatch from our central Indian industrial hub</span>
                 </div>
                 <div className="col-span-4 text-[#76736A]">
                   Weeks to months overseas airfreight
