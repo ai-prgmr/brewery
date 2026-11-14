@@ -99,14 +99,14 @@ const founders: Founder[] = [
     isRound: false,
     credentials: [
       "Industrialist & Managing Director",
-      "Manufacturing Alliance, Indian Industrial Hub",
+      "Strategic Manufacturing Alliance, Indian Industrial Hub",
       "Turnkey Project Leadership",
     ],
-    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's manufacturing alliance, supply chain, and business operations at our Indian industrial hub. He oversees the precision production of cellar tanks, unitanks, and piping networks that integrate seamlessly with our German-manufactured Braupagode™ brewhouses. Abhay established the high-standard protocols that ensure world-class sanitary execution across every turnkey installation.",
+    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's strategic manufacturing alliance, supply chain, and business operations at our Indian industrial hub. He oversees precision manufacturing operations and assembly that integrate seamlessly with our German-engineered and manufactured Braupagode™ brewhouses. Abhay established the high-standard protocols that ensure world-class sanitary execution across every turnkey installation.",
     responsibilities: [
-      "Cellar tank, unitank & process piping manufacturing alliance management",
+      "Strategic manufacturing alliance & supply chain leadership",
       "Turnkey project delivery & commercial contracting",
-      "Strategic equipment sourcing & quality assurance",
+      "Equipment sourcing, quality assurance & modular integration",
       "Client commissioning, spare parts logistics & lifetime support",
     ],
     linkedInUrl: "https://www.linkedin.com/search/results/all/?keywords=Abhay%20Jhaveri%20Brau%20Mitraa",
@@ -283,8 +283,8 @@ export default function AboutPage() {
               </p>
               <p className="text-sm sm:text-base text-[#76736A] leading-relaxed max-w-2xl">
                 By uniting Germany’s master-manufactured Braupagode™ brewhouses
-                with our strategic Indian manufacturing alliance for cellar tanks
-                and piping, we provide end-to-end turnkey solutions that empower
+                with our strategic manufacturing alliance at our Indian industrial
+                hub, we provide end-to-end turnkey solutions that empower
                 visionary brewers from first blueprint to first pour.
               </p>
             </div>
@@ -492,9 +492,9 @@ export default function AboutPage() {
                 Braupagode™ brewhouse setup, patented vapor recompression, and
                 automation architecture are engineered and manufactured in Germany
                 by Brauereimanufaktur Kruppa. To ensure sustainable capital expenditure
-                without compromising the brewdeck, all cellar fermentation tanks,
-                bright beer tanks, process piping headers, and utility skids are
-                built through our strategic Indian manufacturing alliance. The
+                without compromising the brewdeck, auxiliary systems, modular
+                assemblies, and turnkey components are executed through our
+                strategic manufacturing alliance at our Indian industrial hub. The
                 result is pure German engineering rigor at accessible project economics.
               </p>
 
@@ -560,31 +560,31 @@ export default function AboutPage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  Manufacturing Alliance (Tanks & Piping)
+                  Strategic Manufacturing Alliance
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Certified food-grade SS304/SS316 cellar tanks, unitanks & BBTs
+                      Certified food-grade SS304/SS316 manufacturing alliance facility
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Skid-mounted process piping manifolds, valving & common fittings
+                      Precision modular integration, skids & sanitary fittings
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Accessible capital expenditure on bulk cellar vessels
+                      Accessible capital expenditure with zero compromise on core brewhouse technology
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Rapid local dispatch for gaskets, tri-clamp spares & 24/7 care
+                      Rapid regional dispatch for essential spares, seals, and immediate care
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

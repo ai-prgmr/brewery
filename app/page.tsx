@@ -186,9 +186,9 @@ export default function HomePage() {
               <p className="hero-enter-desc text-base sm:text-lg text-[#42403B] font-normal leading-relaxed max-w-xl">
                 True to our name, we are your trusted brewing companions. We unite
                 German-manufactured Braupagode™ brewhouse technology with our
-                strategic Indian manufacturing alliance for cellar tanks and piping—helping
-                you design, engineer, and commission the exact turnkey brewery
-                your business, floor plan, and target market demand.
+                strategic manufacturing alliance—helping you design, engineer, and
+                commission the exact turnkey brewery your business, floor plan, and
+                target market demand.
               </p>
               <div className="hero-enter-cta flex flex-wrap items-center gap-4 pt-2">
                 <Link
@@ -312,10 +312,10 @@ export default function HomePage() {
                 Brau Mitraa was created to abolish this false tradeoff. The core
                 Braupagode™ brewhouse setup, patented vapor recompression, and
                 master brewing automation are engineered and manufactured in Germany.
-                Complementary cellar tanks, unitanks, bright beer tanks, process
-                piping, and sanitary fittings are built through our strategic
-                Indian manufacturing alliance. The result is authentic German
-                brewhouse rigor at accessible, streamlined project economics.
+                Complementary plant components, auxiliary systems, and modular
+                skids are executed through our strategic manufacturing alliance at our
+                Indian industrial hub. The result is authentic German brewhouse
+                rigor at accessible, streamlined project economics.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -388,31 +388,31 @@ export default function HomePage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  Manufacturing Alliance (Tanks & Piping)
+                  Strategic Manufacturing Alliance
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Certified food-grade SS304/SS316 cellar tanks, unitanks & BBTs
+                      Certified food-grade SS304/SS316 manufacturing alliance facility
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Skid-mounted process piping manifolds, valving & common fittings
+                      Precision skid assembly, modular integration & sanitary fittings
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Accessible capital expenditure on bulk cellar storage
+                      Accessible capital expenditure with zero compromise on core brewhouse technology
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Rapid local dispatch for gaskets, tri-clamp spares & 24/7 care
+                      Rapid regional dispatch for essential spares, seals, and immediate care
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

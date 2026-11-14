@@ -92,7 +92,7 @@ const turnkeySteps = [
   {
     step: "02",
     title: "Precision Engineering & Manufacturing Alliance",
-    desc: "The core Braupagode™ brewhouse is precision-manufactured in Germany with patented vapor recompression, while cellar unitanks, bright beer tanks, and orbital process piping are built through our Indian manufacturing alliance using certified food-grade SS304/SS316 to German DIN standards.",
+    desc: "The core Braupagode™ brewhouse is precision-manufactured in Germany with patented vapor recompression, while turnkey auxiliary systems and modular plant components are built through our strategic manufacturing alliance using certified food-grade SS304/SS316 to German DIN standards.",
   },
   {
     step: "03",
