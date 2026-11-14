@@ -91,8 +91,8 @@ const turnkeySteps = [
   },
   {
     step: "02",
-    title: "Precision Engineering & Fabrication",
-    desc: "Vessels are manufactured in our Indian industrial hub using food-grade SS304/SS316 with IIIc mill finish welds, purged orbital piping, and low-chloride insulation certified to German standards.",
+    title: "Precision Engineering & Manufacturing Alliance",
+    desc: "The core Braupagode™ brewhouse is precision-manufactured in Germany with patented vapor recompression, while cellar unitanks, bright beer tanks, and orbital process piping are built through our Indian manufacturing alliance using certified food-grade SS304/SS316 to German DIN standards.",
   },
   {
     step: "03",

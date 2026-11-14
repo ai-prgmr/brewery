@@ -99,12 +99,12 @@ const founders: Founder[] = [
     isRound: false,
     credentials: [
       "Industrialist & Managing Director",
-      "Advanced Manufacturing, Indian Industrial Hub",
+      "Manufacturing Alliance, Indian Industrial Hub",
       "Turnkey Project Leadership",
     ],
-    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's manufacturing infrastructure, supply chain, and business operations at our Indian industrial hub. He recognized that regional craft brewers faced a punishing compromise between exorbitant European import costs and inconsistent local fabrications. Abhay established the precision manufacturing protocols that bring German engineering tolerances to life in India.",
+    bio: "A visionary industrialist with a global outlook, Abhay Jhaveri leads Brau Mitraa's manufacturing alliance, supply chain, and business operations at our Indian industrial hub. He oversees the precision production of cellar tanks, unitanks, and piping networks that integrate seamlessly with our German-manufactured Braupagode™ brewhouses. Abhay established the high-standard protocols that ensure world-class sanitary execution across every turnkey installation.",
     responsibilities: [
-      "Precision SS304/SS316 fabrication management at Indian Industrial Hub",
+      "Cellar tank, unitank & process piping manufacturing alliance management",
       "Turnkey project delivery & commercial contracting",
       "Strategic equipment sourcing & quality assurance",
       "Client commissioning, spare parts logistics & lifetime support",
@@ -282,10 +282,10 @@ export default function AboutPage() {
                 rigid aloofness of traditional imports.
               </p>
               <p className="text-sm sm:text-base text-[#76736A] leading-relaxed max-w-2xl">
-                By uniting Germany’s master brewing lineage with our advanced
-                sanitary fabrication at the Indian industrial hub, we provide
-                end-to-end turnkey solutions that empower visionary brewers from
-                first blueprint to first pour.
+                By uniting Germany’s master-manufactured Braupagode™ brewhouses
+                with our strategic Indian manufacturing alliance for cellar tanks
+                and piping, we provide end-to-end turnkey solutions that empower
+                visionary brewers from first blueprint to first pour.
               </p>
             </div>
 
@@ -475,10 +475,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-5 space-y-6">
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D49B44]">
-                The Engineering Synergy
+                The Manufacturing Alliance
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1A1A18] tracking-tight leading-[1.15]">
-                Why German Design & Indian Fabrication?
+                Why German Brewhouse Technology & Indian Manufacturing Alliance?
               </h2>
               <p className="text-sm sm:text-base text-[#42403B] leading-relaxed">
                 Historically, ambitious craft breweries had two bad choices: pay
@@ -488,11 +488,14 @@ export default function AboutPage() {
                 thermal recompression.
               </p>
               <p className="text-sm text-[#76736A] leading-relaxed">
-                Brau Mitraa was created to abolish this false tradeoff. Rainer and
-                Rüdiger design and certify every system to German industrial
-                standards, while Abhay oversees meticulous stainless steel
-                fabrication at our Indian industrial hub. The result is pure
-                German engineering rigor at local manufacturing efficiency.
+                Brau Mitraa was created to abolish this false tradeoff. The core
+                Braupagode™ brewhouse setup, patented vapor recompression, and
+                automation architecture are engineered and manufactured in Germany
+                by Brauereimanufaktur Kruppa. To ensure sustainable capital expenditure
+                without compromising the brewdeck, all cellar fermentation tanks,
+                bright beer tanks, process piping headers, and utility skids are
+                built through our strategic Indian manufacturing alliance. The
+                result is pure German engineering rigor at accessible project economics.
               </p>
 
               <div className="pt-2">
@@ -516,13 +519,13 @@ export default function AboutPage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  German Engineering Heritage
+                  German Core Brewhouse & Tech
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Proprietary Braupagode vertical vessel thermodynamic design
+                      Proprietary Braupagode vertical brewhouse made in Germany
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -535,14 +538,14 @@ export default function AboutPage() {
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Reinheitsgebot pure brewing discipline & recipe
+                      Reinheitsgebot pure brewing discipline & master recipe
                       formulation
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      DIN 11851 sanitary union fittings & aseptic sampling ports
+                      German DIN/TÜV sanitary standards & factory acceptance testing
                     </span>
                   </li>
                 </ul>
@@ -557,26 +560,31 @@ export default function AboutPage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  Indian Fabrication Excellence
+                  Manufacturing Alliance (Tanks & Piping)
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Certified food-grade SS304/SS316 fabrication facility
+                      Certified food-grade SS304/SS316 cellar tanks, unitanks & BBTs
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Up to 40% capital expenditure savings versus European
-                      imports
+                      Skid-mounted process piping manifolds, valving & common fittings
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Rapid local dispatch for spare parts, seals, and gaskets
+                      Accessible capital expenditure on bulk cellar vessels
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
+                    <span>
+                      Rapid local dispatch for gaskets, tri-clamp spares & 24/7 care
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

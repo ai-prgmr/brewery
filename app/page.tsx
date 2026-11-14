@@ -184,10 +184,11 @@ export default function HomePage() {
               </h1>
 
               <p className="hero-enter-desc text-base sm:text-lg text-[#42403B] font-normal leading-relaxed max-w-xl">
-                True to our name, we are your trusted brewing companions. We combine
-                centuries of German master brewing craft with precision Indian
-                fabrication to help you design, engineer, and commission the exact
-                turnkey brewery your business, floor plan, and target market demand.
+                True to our name, we are your trusted brewing companions. We unite
+                German-manufactured Braupagode™ brewhouse technology with our
+                strategic Indian manufacturing alliance for cellar tanks and piping—helping
+                you design, engineer, and commission the exact turnkey brewery
+                your business, floor plan, and target market demand.
               </p>
               <div className="hero-enter-cta flex flex-wrap items-center gap-4 pt-2">
                 <Link
@@ -292,12 +293,12 @@ export default function HomePage() {
             {/* Left Narrative */}
             <div className="lg:col-span-5 space-y-6 scroll-reveal">
               <span className="text-xs uppercase tracking-[0.25em] font-semibold text-[#D49B44]">
-                THE ENGINEERING SYNERGY
+                THE MANUFACTURING ALLIANCE
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#1A1A18] tracking-tight leading-[1.14]">
-                German Brewing Engineering. <br />
+                German Brewhouse Technology. <br />
                 <span className="italic font-normal text-[#D49B44]">
-                  Indian Precision Manufacturing.
+                  Strategic Manufacturing Alliance.
                 </span>
               </h2>
               <p className="text-sm sm:text-base text-[#42403B] leading-relaxed">
@@ -308,12 +309,13 @@ export default function HomePage() {
                 thermal recompression.
               </p>
               <p className="text-sm text-[#76736A] leading-relaxed">
-                Brau Mitraa was created to abolish this false tradeoff. Master
-                brewers and engineers design and certify every system to German
-                industrial DIN/TÜV standards, while our advanced Indian
-                industrial hub executes precision stainless fabrication. The
-                result is pure German engineering rigor at accessible local
-                manufacturing efficiency.
+                Brau Mitraa was created to abolish this false tradeoff. The core
+                Braupagode™ brewhouse setup, patented vapor recompression, and
+                master brewing automation are engineered and manufactured in Germany.
+                Complementary cellar tanks, unitanks, bright beer tanks, process
+                piping, and sanitary fittings are built through our strategic
+                Indian manufacturing alliance. The result is authentic German
+                brewhouse rigor at accessible, streamlined project economics.
               </p>
 
               <div className="pt-2 flex flex-wrap items-center gap-4">
@@ -345,13 +347,13 @@ export default function HomePage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  German Engineering Heritage
+                  German Core Brewhouse & Tech
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Proprietary Braupagode vertical vessel thermodynamic design
+                      Proprietary Braupagode vertical brewhouse made in Germany
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
@@ -364,14 +366,14 @@ export default function HomePage() {
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Reinheitsgebot pure brewing discipline & recipe
+                      Reinheitsgebot pure brewing discipline & master recipe
                       formulation
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      DIN 11851 sanitary union fittings & aseptic sampling ports
+                      German DIN/TÜV sanitary standards & factory acceptance testing
                     </span>
                   </li>
                 </ul>
@@ -386,26 +388,31 @@ export default function HomePage() {
                   </span>
                 </div>
                 <h3 className="font-serif text-xl font-bold text-[#1A1A18]">
-                  Indian Fabrication Excellence
+                  Manufacturing Alliance (Tanks & Piping)
                 </h3>
                 <ul className="space-y-2.5 text-xs text-[#76736A]">
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Certified food-grade SS304/SS316 fabrication facility
+                      Certified food-grade SS304/SS316 cellar tanks, unitanks & BBTs
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Up to 40% capital expenditure savings versus European
-                      imports
+                      Skid-mounted process piping manifolds, valving & common fittings
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
                     <span>
-                      Rapid local dispatch for spare parts, seals, and gaskets
+                      Accessible capital expenditure on bulk cellar storage
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <IconCheck className="w-4 h-4 text-[#D49B44] shrink-0 mt-0.5" />
+                    <span>
+                      Rapid local dispatch for gaskets, tri-clamp spares & 24/7 care
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

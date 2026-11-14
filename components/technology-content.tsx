@@ -110,7 +110,7 @@ export function TechnologyContent() {
                   </span>
                 </h2>
                 <p className="text-sm sm:text-base text-[#42403B] leading-relaxed">
-                  Engineered by Brauereimanufaktur Kruppa in Germany, the Braupagode
+                  Engineered and manufactured by Brauereimanufaktur Kruppa in Germany, the Braupagode
                   revolutionizes microbrewery spatial ergonomics by vertically
                   stacking two vessels. The upper vessel houses mashing and lautering,
                   while the lower vessel serves as the wort boiling kettle and whirlpool.
