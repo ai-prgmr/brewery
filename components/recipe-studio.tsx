@@ -927,8 +927,8 @@ export function RecipeStudio() {
             {/* Shelf 1: Malts */}
             <section
               className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${highlightMissing && Object.keys(selectedMalts).length === 0
-                  ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
-                  : "border-[#E5DFD5]"
+                ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
+                : "border-[#E5DFD5]"
                 }`}
             >
               <div className="flex items-center justify-between pb-4 border-b border-[#E5DFD5] mb-5">
@@ -954,8 +954,8 @@ export function RecipeStudio() {
                       key={item.id}
                       onClick={() => handleToggleMalt(item.id)}
                       className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
-                          ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
-                          : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
+                        ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
+                        : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
                         }`}
                     >
                       <div className="flex items-start gap-3">
@@ -1040,8 +1040,8 @@ export function RecipeStudio() {
                       key={item.id}
                       onClick={() => handleToggleHop(item.id)}
                       className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
-                          ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
-                          : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
+                        ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
+                        : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
                         }`}
                     >
                       <div className="flex items-start gap-3">
@@ -1109,8 +1109,8 @@ export function RecipeStudio() {
             {/* Shelf 3: Yeast Strains */}
             <section
               className={`bg-white rounded-2xl border p-6 sm:p-7 shadow-sm transition-all duration-300 ${highlightMissing && !selectedYeast
-                  ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
-                  : "border-[#E5DFD5]"
+                ? "border-[#D49B44] ring-2 ring-[#D49B44]/20"
+                : "border-[#E5DFD5]"
                 }`}
             >
               <div className="flex items-center justify-between pb-4 border-b border-[#E5DFD5] mb-5">
@@ -1137,8 +1137,8 @@ export function RecipeStudio() {
                       key={item.id}
                       onClick={() => handleSelectYeast(item.id)}
                       className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex items-start gap-3.5 ${isSelected
-                          ? "border-[#D49B44] bg-[#FAF8F5] ring-2 ring-[#D49B44]/40 shadow-sm"
-                          : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
+                        ? "border-[#D49B44] bg-[#FAF8F5] ring-2 ring-[#D49B44]/40 shadow-sm"
+                        : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
                         }`}
                     >
                       <div
@@ -1154,8 +1154,8 @@ export function RecipeStudio() {
                           </span>
                           <span
                             className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full ${isSelected
-                                ? "bg-[#D49B44] text-white"
-                                : "bg-[#EFE9DF] text-[#76736A]"
+                              ? "bg-[#D49B44] text-white"
+                              : "bg-[#EFE9DF] text-[#76736A]"
                               }`}
                           >
                             {isSelected ? "Active" : "Select"}
@@ -1201,8 +1201,8 @@ export function RecipeStudio() {
                       key={item.id}
                       onClick={() => handleToggleAdjunct(item.id)}
                       className={`cursor-pointer rounded-xl border p-3.5 transition-all text-left flex flex-col justify-between ${isSelected
-                          ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
-                          : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
+                        ? "border-[#D49B44] bg-[#FAF8F5] ring-1 ring-[#D49B44]/30 shadow-sm"
+                        : "border-[#E5DFD5] bg-[#FCFBF9] hover:border-[#D49B44]/60 hover:bg-white"
                         }`}
                     >
                       <div className="flex items-start gap-3">
@@ -1424,8 +1424,8 @@ export function RecipeStudio() {
                           })
                         }
                         className={`py-2 px-2 text-xs font-semibold rounded-lg border transition-all text-center ${process.ageMode === opt.key
-                            ? "bg-[#1A1A18] text-white border-[#1A1A18]"
-                            : "bg-[#F4EFE6] text-[#42403B] border-[#E5DFD5] hover:bg-[#EFE9DF]"
+                          ? "bg-[#1A1A18] text-white border-[#1A1A18]"
+                          : "bg-[#F4EFE6] text-[#42403B] border-[#E5DFD5] hover:bg-[#EFE9DF]"
                           }`}
                       >
                         {opt.label}
@@ -1780,8 +1780,20 @@ export function RecipeStudio() {
                 {result.style.base === "Experimental" && (
                   <div className="bg-gradient-to-r from-[#FAF8F5] to-[#F4EFE6] border border-[#D49B44]/40 rounded-xl p-4 space-y-2">
                     <div className="flex items-center gap-1.5 text-xs font-bold text-[#B8822B]">
-                      <span>✨</span>
-                      <span>Bespoke Innovation Unlocked!</span>
+                      <span className="relative inline-flex items-center px-3 py-1 font-semibold text-amber-900 bg-amber-100 rounded-full">
+
+                        <svg className="absolute -top-1.5 -left-1.5 w-4 h-4 text-amber-500 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+                        </svg>
+
+                        <span>✨</span>
+                        <span>Bespoke Innovation Unlocked!</span>
+
+                        <svg className="absolute -bottom-1 -right-1.5 w-3 h-3 text-amber-400 animate-ping" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+                        </svg>
+                      </span>
+
                     </div>
                     <p className="text-xs text-[#42403B]">
                       This formulation defies standard commercial constraints. Give your invention an official brand name:
