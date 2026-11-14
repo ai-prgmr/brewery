@@ -1850,7 +1850,7 @@ export function RecipeStudio() {
                       />
                       <button
                         type="button"
-                        className="btn secondary"
+                        className="px-4 py-2 bg-[#D49B44] hover:bg-[#B8822B] text-white text-xs font-bold rounded-lg transition-all shrink-0"
                         id="saveNameBtn"
                         onClick={handleSaveCustomRecipe}
                       >
