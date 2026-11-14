@@ -141,15 +141,24 @@
     border-color: var(--border);
     outline-color: color-mix(in oklch, var(--ring) 50%, transparent);
   }
+
   body {
     background-color: #FAF8F5;
     color: #1A1A18;
     font-family: var(--font-sans), sans-serif;
   }
-  h1, h2, h3, h4, .font-serif, .font-editorial {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .font-serif,
+  .font-editorial {
     font-family: var(--font-serif), Georgia, serif;
   }
-  .font-script, .font-handwriting {
+
+  .font-script,
+  .font-handwriting {
     font-family: var(--font-script), cursive;
   }
 }
@@ -162,10 +171,12 @@
 .custom-scrollbar::-webkit-scrollbar {
   height: 6px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-track {
   background: #EFECE4;
   border-radius: 9999px;
 }
+
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #D49B44;
   border-radius: 9999px;
@@ -182,6 +193,7 @@
     opacity: 0;
     transform: translateY(24px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -193,6 +205,7 @@
     opacity: 0.85;
     transform: scale(1.05);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -204,6 +217,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -216,6 +230,7 @@
     opacity: 0;
     transform: translateX(-48px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -227,6 +242,7 @@
     opacity: 0;
     transform: translateX(48px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -238,6 +254,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -249,6 +266,7 @@
     opacity: 0;
     transform: scale(0.9) translateY(24px);
   }
+
   100% {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -256,10 +274,13 @@
 }
 
 @keyframes portholeSheen {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.15;
     transform: rotate(0deg);
   }
+
   50% {
     opacity: 0.35;
     transform: rotate(6deg);
@@ -376,11 +397,25 @@ header.header-animated {
 }
 
 /* Staggered Delay Utilities */
-.anim-delay-1 { animation-delay: 120ms !important; }
-.anim-delay-2 { animation-delay: 240ms !important; }
-.anim-delay-3 { animation-delay: 360ms !important; }
-.anim-delay-4 { animation-delay: 480ms !important; }
-.anim-delay-5 { animation-delay: 600ms !important; }
+.anim-delay-1 {
+  animation-delay: 120ms !important;
+}
+
+.anim-delay-2 {
+  animation-delay: 240ms !important;
+}
+
+.anim-delay-3 {
+  animation-delay: 360ms !important;
+}
+
+.anim-delay-4 {
+  animation-delay: 480ms !important;
+}
+
+.anim-delay-5 {
+  animation-delay: 600ms !important;
+}
 
 /* Legacy Support & Generic Reveals */
 .scroll-reveal {
@@ -407,8 +442,8 @@ header.header-animated {
 
 .editorial-card {
   transition: transform 380ms var(--ease-editorial),
-              box-shadow 380ms var(--ease-editorial),
-              border-color 380ms var(--ease-editorial) !important;
+    box-shadow 380ms var(--ease-editorial),
+    border-color 380ms var(--ease-editorial) !important;
   will-change: transform, box-shadow;
   cursor: pointer;
 }
@@ -472,6 +507,7 @@ header.header-animated {
 /* --- 8. Accessibility: Reduced Motion Support --- */
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -501,4 +537,131 @@ header.header-animated {
     animation: none !important;
     transition: none !important;
   }
+}
+
+/* --- 9. Recipe Studio Invention Naming Box & Sparkles (from Brewery-Game) --- */
+.naming {
+  position: relative;
+  margin-top: 12px;
+  background: var(--chip, #fbeedb);
+  border: 2px dashed var(--brown, #5a3517);
+  border-radius: 12px;
+  padding: 10px;
+}
+.naming label {
+  font-size: .85rem;
+  display: block;
+  margin-bottom: 6px;
+}
+.name-row {
+  display: flex;
+  gap: 6px;
+}
+.spark {
+  position: absolute;
+  color: var(--spark, #f5b400);
+  font-size: 15px;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow: 0 0 2px #fff, 0 0 8px var(--spark, #f5b400);
+  animation: twinkle 1.8s ease-in-out infinite;
+}
+.spark.s2 { font-size: 11px; }
+.spark.s1 { top: -11px; left: -7px; }
+.spark.s2 { top: -8px; right: 14px; animation-delay: .4s; }
+.spark.s3 { top: 40%; left: -13px; animation-delay: .9s; }
+.spark.s4 { bottom: -9px; left: 35%; animation-delay: .2s; font-size: 12px; }
+.spark.s5 { bottom: -11px; right: -6px; animation-delay: 1.1s; }
+.spark.s6 { top: 45%; right: -11px; animation-delay: .6s; font-size: 12px; }
+.spark.s7 { top: -14px; left: 42%; animation-delay: .3s; font-size: 10px; }
+.spark.s8 { top: 18%; right: -16px; animation-delay: 1.3s; font-size: 9px; }
+.spark.s9 { top: 70%; left: -18px; animation-delay: .75s; font-size: 10px; }
+.spark.s10 { bottom: -15px; left: 12%; animation-delay: 1.5s; font-size: 9px; }
+.spark.s11 { bottom: 18%; right: -17px; animation-delay: .5s; font-size: 13px; }
+.spark.s12 { top: 6px; left: 60%; animation-delay: 1.8s; font-size: 9px; }
+
+@keyframes twinkle {
+  0%, 100% { opacity: .25; transform: scale(.6) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.2) rotate(45deg); }
+}
+
+.name-row input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-size: 0.875rem;
+  padding: 8px 12px;
+  border: 2px solid var(--brown, #5a3517);
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1a1a18;
+}
+.name-row input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(212, 155, 68, 0.4);
+}
+
+.name-row .btn {
+  width: auto;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background: #f5b942;
+  color: #2b1a0e;
+  border: 2px solid #5a3517;
+  border-bottom-width: 5px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 0;
+  transition: transform .05s, border-bottom-width .05s;
+}
+
+.name-row .btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 3px;
+}
+
+.name-row .btn.secondary {
+  background: #e8d4b0;
+}
+
+.saved-msg {
+  font-size: .8rem;
+  color: #3f8f2f;
+  margin-top: 4px;
+  min-height: 1em;
+  font-weight: 600;
+}
+
+.invent-label {
+  color: #d62828;
+  font-weight: bold;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .2; }
+}
+
+.confetti {
+  position: absolute;
+  width: 7px;
+  height: 11px;
+  background: var(--cc);
+  border-radius: 2px;
+  pointer-events: none;
+  box-shadow: 0 0 3px rgba(0,0,0,.15);
+  animation: confettiSpin 2.4s ease-in-out infinite;
+}
+
+.confetti:nth-of-type(odd) {
+  width: 9px;
+  height: 5px;
+}
+
+@keyframes confettiSpin {
+  0%, 100% { transform: rotate(0deg) translateY(0); opacity: .9; }
+  50% { transform: rotate(180deg) translateY(-4px); opacity: 1; }
 }

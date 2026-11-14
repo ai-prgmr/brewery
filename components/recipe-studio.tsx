@@ -182,6 +182,7 @@ export function RecipeStudio() {
   // Sync assistant speech when ingredients change
   useEffect(() => {
     if (isBrewing) return;
+    if (result !== null) return;
     const hasMalt = Object.keys(selectedMalts).length > 0;
     const hasYeast = selectedYeast !== null;
 
@@ -194,10 +195,30 @@ export function RecipeStudio() {
     } else {
       setSpeech("Recipe formulated! Adjust your brewhouse parameters, then click Run Brew Simulation.");
     }
-  }, [selectedMalts, selectedYeast, isBrewing]);
+  }, [selectedMalts, selectedYeast, isBrewing, result]);
+
+  // Reset any active brew result when ingredients or parameters are adjusted
+  const invalidateResult = () => {
+    if (result !== null) {
+      setResult(null);
+      setLiquidHeightPct(0);
+      setStageLabel("Ready when you are");
+      setActiveModal("none");
+      setSavedMsg("");
+      setSpeech(
+        "Recipe modified! Click 'Run Brew Simulation' to calculate your updated telemetry."
+      );
+    }
+  };
+
+  const handleUpdateProcess = (patch: Partial<ProcessState>) => {
+    invalidateResult();
+    setProcess((prev) => ({ ...prev, ...patch }));
+  };
 
   // Stepper handlers
   const handleToggleMalt = (id: string) => {
+    invalidateResult();
     setHighlightMissing(false);
     setSelectedMalts((prev) => {
       const next = { ...prev };
@@ -212,6 +233,7 @@ export function RecipeStudio() {
 
   const handleAdjustMalt = (id: string, delta: number, e: React.MouseEvent) => {
     e.stopPropagation();
+    invalidateResult();
     setSelectedMalts((prev) => {
       const curr = prev[id] || 0;
       const nextVal = Math.round((curr + delta * 0.5) * 10) / 10;
@@ -225,6 +247,7 @@ export function RecipeStudio() {
   };
 
   const handleToggleHop = (id: string) => {
+    invalidateResult();
     setSelectedHops((prev) => {
       const next = { ...prev };
       if (next[id] !== undefined) {
@@ -238,6 +261,7 @@ export function RecipeStudio() {
 
   const handleAdjustHop = (id: string, delta: number, e: React.MouseEvent) => {
     e.stopPropagation();
+    invalidateResult();
     setSelectedHops((prev) => {
       const curr = prev[id] || 0;
       const nextVal = curr + delta * 5;
@@ -251,11 +275,13 @@ export function RecipeStudio() {
   };
 
   const handleSelectYeast = (id: string) => {
+    invalidateResult();
     setHighlightMissing(false);
     setSelectedYeast((prev) => (prev === id ? null : id));
   };
 
   const handleToggleAdjunct = (id: string) => {
+    invalidateResult();
     setSelectedAdjuncts((prev) => {
       const next = { ...prev };
       if (next[id] !== undefined) {
@@ -269,6 +295,7 @@ export function RecipeStudio() {
 
   const handleAdjustAdjunct = (id: string, delta: number, e: React.MouseEvent) => {
     e.stopPropagation();
+    invalidateResult();
     setSelectedAdjuncts((prev) => {
       const curr = prev[id] || 0;
       const nextVal = Math.round((curr + delta * 0.2) * 10) / 10;
@@ -803,7 +830,7 @@ export function RecipeStudio() {
   const handleSaveCustomRecipe = () => {
     const trimmed = customNameInput.trim();
     if (!trimmed) {
-      setSavedMsg("Please provide a name for your custom brew.");
+      setSavedMsg("Type a name first.");
       return;
     }
     if (!result) return;
@@ -828,7 +855,7 @@ export function RecipeStudio() {
     } catch {
       // ignore
     }
-    setSavedMsg(`Saved "${trimmed}" to your Brewhouse Recipe Library!`);
+    setSavedMsg(`Saved "${trimmed}" to the recipe book.`);
     setResult({ ...result, displayName: trimmed });
   };
 
@@ -1293,7 +1320,7 @@ export function RecipeStudio() {
                     step="1"
                     value={process.mashTemp}
                     onChange={(e) =>
-                      setProcess({ ...process, mashTemp: Number(e.target.value) })
+                      handleUpdateProcess({ mashTemp: Number(e.target.value) })
                     }
                     className="w-full accent-[#D49B44] cursor-pointer"
                   />
@@ -1318,7 +1345,7 @@ export function RecipeStudio() {
                     step="5"
                     value={process.boilMin}
                     onChange={(e) =>
-                      setProcess({ ...process, boilMin: Number(e.target.value) })
+                      handleUpdateProcess({ boilMin: Number(e.target.value) })
                     }
                     className="w-full accent-[#D49B44] cursor-pointer"
                   />
@@ -1343,7 +1370,7 @@ export function RecipeStudio() {
                     step="1"
                     value={process.fermTemp}
                     onChange={(e) =>
-                      setProcess({ ...process, fermTemp: Number(e.target.value) })
+                      handleUpdateProcess({ fermTemp: Number(e.target.value) })
                     }
                     className="w-full accent-[#D49B44] cursor-pointer"
                   />
@@ -1368,7 +1395,7 @@ export function RecipeStudio() {
                     step="1"
                     value={process.fermDays}
                     onChange={(e) =>
-                      setProcess({ ...process, fermDays: Number(e.target.value) })
+                      handleUpdateProcess({ fermDays: Number(e.target.value) })
                     }
                     className="w-full accent-[#D49B44] cursor-pointer"
                   />
@@ -1393,7 +1420,7 @@ export function RecipeStudio() {
                     step="1"
                     value={process.dryHop}
                     onChange={(e) =>
-                      setProcess({ ...process, dryHop: Number(e.target.value) })
+                      handleUpdateProcess({ dryHop: Number(e.target.value) })
                     }
                     className="w-full accent-[#D49B44] cursor-pointer"
                   />
@@ -1418,8 +1445,7 @@ export function RecipeStudio() {
                         key={opt.key}
                         type="button"
                         onClick={() =>
-                          setProcess({
-                            ...process,
+                          handleUpdateProcess({
                             ageMode: opt.key as "none" | "cold" | "oak",
                           })
                         }
@@ -1778,47 +1804,62 @@ export function RecipeStudio() {
 
                 {/* Experimental Invention Name Box */}
                 {result.style.base === "Experimental" && (
-                  <div className="bg-gradient-to-r from-[#FAF8F5] to-[#F4EFE6] border border-[#D49B44]/40 rounded-xl p-4 space-y-2">
-                    <div className="flex items-center gap-1.5 text-xs font-bold text-[#B8822B]">
-                      <span className="relative inline-flex items-center px-3 py-1 font-semibold text-amber-900 bg-amber-100 rounded-full">
-
-                        <svg className="absolute -top-1.5 -left-1.5 w-4 h-4 text-amber-500 animate-pulse" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-                        </svg>
-
-                        <span>✨</span>
-                        <span>Bespoke Innovation Unlocked!</span>
-
-                        <svg className="absolute -bottom-1 -right-1.5 w-3 h-3 text-amber-400 animate-ping" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-                        </svg>
-                      </span>
-
-                    </div>
-                    <p className="text-xs text-[#42403B]">
-                      This formulation defies standard commercial constraints. Give your invention an official brand name:
-                    </p>
-                    <div className="flex gap-2 pt-1">
+                  <div
+                    className="naming"
+                    id="naming"
+                    style={{ "--spark": srmColor(result.srm) || "#c56f00" } as React.CSSProperties}
+                  >
+                    <span className="spark s1">✦</span>
+                    <span className="spark s2">✧</span>
+                    <span className="spark s3">✦</span>
+                    <span className="spark s4">✧</span>
+                    <span className="spark s5">✦</span>
+                    <span className="spark s6">✧</span>
+                    <span className="spark s7">✦</span>
+                    <span className="spark s8">✧</span>
+                    <span className="spark s9">✦</span>
+                    <span className="spark s10">✧</span>
+                    <span className="spark s11">✦</span>
+                    <span className="spark s12">✧</span>
+                    <i className="confetti c1" style={{ left: "-4px", top: "12%", "--cc": "#e63946", animationDelay: "0s" } as React.CSSProperties}></i>
+                    <i className="confetti c2" style={{ left: "-6px", top: "60%", "--cc": "#ffd166", animationDelay: "0.4s" } as React.CSSProperties}></i>
+                    <i className="confetti c3" style={{ left: "-12px", top: "88%", "--cc": "#06d6a0", animationDelay: "0.9s" } as React.CSSProperties}></i>
+                    <i className="confetti c4" style={{ left: "34%", top: "-7px", "--cc": "#118ab2", animationDelay: "0.2s" } as React.CSSProperties}></i>
+                    <i className="confetti c5" style={{ left: "76%", top: "-8px", "--cc": "#ef476f", animationDelay: "1.1s" } as React.CSSProperties}></i>
+                    <i className="confetti c6" style={{ left: "58%", top: "101%", "--cc": "#ffd166", animationDelay: "0.6s" } as React.CSSProperties}></i>
+                    <i className="confetti c7" style={{ left: "14%", top: "101%", "--cc": "#118ab2", animationDelay: "1.4s" } as React.CSSProperties}></i>
+                    <i className="confetti c8" style={{ left: "92%", top: "101%", "--cc": "#e63946", animationDelay: "0.3s" } as React.CSSProperties}></i>
+                    <i className="confetti c9" style={{ left: "102%", top: "30%", "--cc": "#06d6a0", animationDelay: "0.8s" } as React.CSSProperties}></i>
+                    <i className="confetti c10" style={{ left: "101%", top: "82%", "--cc": "#ef476f", animationDelay: "1.2s" } as React.CSSProperties}></i>
+                    <i className="confetti c11" style={{ left: "-14px", top: "30%", "--cc": "#9b5de5", animationDelay: "0.5s" } as React.CSSProperties}></i>
+                    <i className="confetti c12" style={{ left: "46%", top: "-12px", "--cc": "#ff8fab", animationDelay: "1.6s" } as React.CSSProperties}></i>
+                    <label className="invent-label" htmlFor="nameInput">
+                      🎉 You&apos;ve made a new invention in the beer industry! Name it yourself.
+                    </label>
+                    <div className="name-row">
                       <input
                         type="text"
+                        id="nameInput"
+                        maxLength={40}
+                        placeholder="e.g. Bert's Golden Lager"
                         value={customNameInput}
                         onChange={(e) => setCustomNameInput(e.target.value)}
-                        placeholder="e.g. Mitraa Heritage Gold"
-                        className="flex-1 text-xs border border-[#E5DFD5] rounded-lg px-3 py-2 bg-white text-[#1A1A18] focus:outline-none focus:ring-2 focus:ring-[#D49B44]"
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") handleSaveCustomRecipe();
+                        }}
                       />
                       <button
                         type="button"
+                        className="btn secondary"
+                        id="saveNameBtn"
                         onClick={handleSaveCustomRecipe}
-                        className="px-4 py-2 bg-[#D49B44] hover:bg-[#B8822B] text-white text-xs font-bold rounded-lg transition-all shrink-0"
                       >
                         Save
                       </button>
                     </div>
-                    {savedMsg && (
-                      <p className="text-[11px] font-semibold text-emerald-700 mt-1">
-                        {savedMsg}
-                      </p>
-                    )}
+                    <div className="saved-msg" id="savedMsg">
+                      {savedMsg}
+                    </div>
                   </div>
                 )}
 
